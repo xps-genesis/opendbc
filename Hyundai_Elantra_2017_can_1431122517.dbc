@@ -1,0 +1,54 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BU_: XXX
+
+
+BO_ 1345 Contains FWD Doors + Trunk: 8 XXX
+ SG_ Trunk Stat : 12|1@0+ (1,0) [0|1] "" XXX
+ SG_ Drivers Door Stat : 8|1@1+ (1,0) [0|1] "" XXX
+ SG_ FWD Pax Door Stat : 35|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 688 Steering?: 8 XXX
+ SG_ Steering position? : 7|16@0- (1,0) [0|65535] "" XXX
+
+BO_ 339 undefined: 8 XXX
+
+BO_ 1363 Contains Rear Door: 8 XXX
+ SG_ Rear R Pax Door Stat : 23|1@0+ (1,0) [0|1] "" XXX
+ SG_ Rear L Pax Door Stat : 24|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 832 Possible LKAS or cluster: 8 XXX
+ SG_ LKAS timeout message? : 8|1@0+ (1,0) [0|1] "" XXX
