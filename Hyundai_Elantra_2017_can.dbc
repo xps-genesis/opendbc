@@ -99,7 +99,7 @@ BO_ 1322 undefined: 8 XXX
 BO_ 127 undefined: 8 XXX
 
 BO_ 688 SAS: 8 XXX
- SG_ STEERING_ANGLE : 7|16@0- (1,0) [0|65535] "" XXX
+ SG_ STEERING_ANGLE : 0|16@1- (1,0) [0|65535] "" XXX
 
 
 
