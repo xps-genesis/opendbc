@@ -53,9 +53,9 @@ BO_ 832 LKAS_HUD: 8 XXX
  SG_ LKAS_TIMEOUT : 8|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 1292 MISC: 8 XXX
- SG_ DOOR_HANDLE_LIGHT1 : 4|1@0+ (1,0) [0|1] "" XXX
- SG_ DOOR_HANDLE_LIGHT2 : 35|1@0+ (1,0) [0|1] "" XXX
  SG_ COLD_DARK_SIGNAL : 63|4@0+ (1,0) [0|15] "" XXX
+ SG_ CD1 : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ CD2 : 35|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 1265 NEW_MSG_2: 8 XXX
  SG_ COLD_DARK0 : 5|1@0+ (1,0) [0|1] "" XXX
@@ -108,9 +108,9 @@ BO_ 688 STEERING: 8 XXX
 
 
 
-CM_ SG_ 1292 DOOR_HANDLE_LIGHT1 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
-CM_ SG_ 1292 DOOR_HANDLE_LIGHT2 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
 CM_ SG_ 1292 COLD_DARK_SIGNAL "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 1292 CD1 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 1292 CD2 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
 CM_ SG_ 1265 COLD_DARK0 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
 CM_ SG_ 1265 COLD_DARK5 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
 CM_ SG_ 1265 COLD_DARK3 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
