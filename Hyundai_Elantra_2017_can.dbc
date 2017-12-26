@@ -51,6 +51,7 @@ BO_ 1363 DOOR_STATUS2: 8 XXX
 
 BO_ 832 LKAS_HUD: 8 XXX
  SG_ LKAS_TIMEOUT : 8|1@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_STEER : 16|8@1- (1,0) [0|255] "" XXX
 
 BO_ 1292 MISC: 8 XXX
  SG_ COLD_DARK_SIGNAL : 63|4@0+ (1,0) [0|15] "" XXX
@@ -106,11 +107,14 @@ BO_ 688 STEERING: 8 XXX
  SG_ MSG_COUNT : 39|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 809 ACC: 8 XXX
- SG_ ACC_ACTIVE : 30|1@0+ (1,0) [0|1] "" XXX
+ SG_ ACC_ACTIVE : 30|1@0- (1,0) [0|1] "" XXX
+ SG_ NEW_SIGNAL_1 : 4|5@0+ (1,0) [0|31] "" XXX
+ SG_ NEW_SIGNAL_2 : 40|16@1- (1,0) [0|65535] "" XXX
 
 
 
 
+CM_ SG_ 832 LKAS_STEER "active w/ LKAS steer assist on";
 CM_ SG_ 1292 COLD_DARK_SIGNAL "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
 CM_ SG_ 1292 CD1 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
 CM_ SG_ 1292 CD2 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
