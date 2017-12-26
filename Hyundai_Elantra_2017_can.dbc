@@ -66,6 +66,7 @@ BO_ 1265 NEW_MSG_2: 8 XXX
  SG_ COLD_DARK1 : 23|1@0+ (1,0) [0|1] "" XXX
  SG_ COLD_DARK6 : 31|4@0- (1,0) [0|15] "" XXX
  SG_ COLD_DARK4 : 18|1@0+ (1,0) [0|1] "" XXX
+ SG_ SPEED : 15|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1456 NEW_MSG_3: 8 XXX
  SG_ CD2 : 2|1@0+ (1,0) [0|1] "" XXX
@@ -95,7 +96,8 @@ BO_ 1369 undefined: 8 XXX
 
 BO_ 1427 undefined: 8 XXX
 
-BO_ 1322 undefined: 8 XXX
+BO_ 1322 SPD4: 8 XXX
+ SG_ SPEED : 7|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 127 undefined: 8 XXX
 
@@ -110,6 +112,22 @@ BO_ 809 ACC: 8 XXX
  SG_ BRAKE_ACTIVE : 32|2@1+ (1,0) [0|3] "" XXX
  SG_ ACC_ACTIVE : 30|1@0+ (1,0) [0|1] "" XXX
  SG_ THROTTLE_POS_SENSE : 47|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 273 SPD0: 8 XXX
+ SG_ SPEED : 55|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 274 SPD1: 8 XXX
+ SG_ SPEED1 : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ SPEED : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 790 SPD2: 8 XXX
+ SG_ SPEED1 : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ SPEED2 : 23|8@0+ (1,0) [0|255] "" XXX
+ SG_ SPEED : 31|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 1366 SPD3: 8 XXX
+ SG_ SPEED1 : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ SPEED : 31|8@0+ (1,0) [0|255] "" XXX
 
 
 
