@@ -41,9 +41,6 @@ BO_ 1345 DOOR_STATUS: 8 XXX
  SG_ DRIVER_DOOR_STATUS : 8|1@0+ (1,0) [0|1] "" XXX
  SG_ FRONT_PASS_DOOR_STATUS : 35|1@0+ (1,0) [0|1] "" XXX
 
-BO_ 688 Steering?: 8 XXX
- SG_ Steering position? : 7|16@0- (1,0) [0|65535] "" XXX
-
 BO_ 339 undefined: 8 XXX
 
 BO_ 1363 DOOR_STATUS2: 8 XXX
@@ -52,3 +49,31 @@ BO_ 1363 DOOR_STATUS2: 8 XXX
 
 BO_ 832 LKAS_HUD: 8 XXX
  SG_ LKAS_TIMEOUT : 8|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1292 NEW_MSG_1: 8 XXX
+ SG_ DOOR_HANDLE_LIGHT1 : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_HANDLE_LIGHT2 : 35|1@0+ (1,0) [0|1] "" XXX
+ SG_ COLD_DARK_SIGNAL : 63|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1265 NEW_MSG_2: 8 XXX
+ SG_ COLD_DARK0 : 5|1@0+ (1,0) [0|1] "" XXX
+ SG_ COLD_DARK5 : 17|1@0+ (1,0) [0|1] "" XXX
+ SG_ COLD_DARK4 : 18|1@0+ (1,0) [0|1] "" XXX
+ SG_ COLD_DARK3 : 19|1@0+ (1,0) [0|1] "" XXX
+ SG_ COLD_DARK2 : 21|1@0+ (1,0) [0|1] "" XXX
+ SG_ COLD_DARK1 : 23|1@0+ (1,0) [0|1] "" XXX
+ SG_ COLD_DARK6 : 31|4@0+ (1,0) [0|15] "" XXX
+
+
+
+
+CM_ SG_ 1292 DOOR_HANDLE_LIGHT1 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 1292 DOOR_HANDLE_LIGHT2 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 1292 COLD_DARK_SIGNAL "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 1265 COLD_DARK0 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 1265 COLD_DARK5 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 1265 COLD_DARK4 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 1265 COLD_DARK3 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 1265 COLD_DARK2 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 1265 COLD_DARK1 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 1265 COLD_DARK6 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
