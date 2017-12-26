@@ -98,8 +98,12 @@ BO_ 1322 undefined: 8 XXX
 
 BO_ 127 undefined: 8 XXX
 
-BO_ 688 SAS: 8 XXX
- SG_ STEERING_ANGLE : 0|16@1- (1,0) [0|65535] "" XXX
+BO_ 688 STEERING: 8 XXX
+ SG_ SAS_ANGLE : 0|16@1- (1,0) [0|65535] "" XXX
+ SG_ SAS_SPEED : 23|8@0+ (1,0) [0|255] "" XXX
+ SG_ SAS_STAT : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ CHECKSUM : 32|4@1+ (1,0) [0|15] "" XXX
+ SG_ MSG_COUNT : 39|4@0+ (1,0) [0|15] "" XXX
 
 
 
@@ -114,3 +118,7 @@ CM_ SG_ 1265 COLD_DARK2 "Signal Active when in proximity to vehicle during cold 
 CM_ SG_ 1265 COLD_DARK1 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
 CM_ SG_ 1265 COLD_DARK6 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
 CM_ SG_ 1265 COLD_DARK4 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 688 SAS_SPEED "Borrowed Byte Location from i30_2014.dbc";
+CM_ SG_ 688 SAS_STAT "Borrowed Byte Location from i30_2014.dbc";
+CM_ SG_ 688 CHECKSUM "Borrowed Byte Location from i30_2014.dbc";
+CM_ SG_ 688 MSG_COUNT "Borrowed Byte Location from i30_2014.dbc";
