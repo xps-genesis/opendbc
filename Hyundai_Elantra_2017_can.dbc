@@ -45,6 +45,7 @@ BO_ 1345 DOOR_STATUS: 8 XXX
  SG_ BTTN_HAZARD_LIGHT : 33|1@0+ (1,0) [0|1] "" XXX
  SG_ LIGHT_CONTROL_DRIVER : 39|3@0+ (1,0) [0|7] "" XXX
  SG_ HEADLAMPS : 31|1@0+ (1,0) [0|1] "" XXX
+ SG_ REAR_DFRST_BTTN : 36|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 339 undefined: 8 XXX
 
@@ -138,13 +139,16 @@ BO_ 1366 SPD3: 8 XXX
  SG_ SPEED1 : 39|8@0+ (1,0) [0|255] "" XXX
  SG_ SPEED : 31|8@0+ (1,0) [0|255] "" XXX
 
-BO_ 275 NEW_MSG_1: 8 XXX
+BO_ 275 OPS: 8 XXX
  SG_ REVERSE_SIGNAL_UNKWN : 23|3@0+ (1,0) [0|7] "" XXX
+ SG_ DRVE_MD_ECO_ON : 27|1@0+ (1,0) [0|1] "" XXX
+ SG_ DRVE_MD_NRML : 31|1@0+ (1,0) [0|1] "" XXX
 
 
 
 
 CM_ SG_ 1345 LIGHT_CONTROL_DRIVER "Auto= 111 DRL= 010 On = 100";
+CM_ SG_ 1345 REAR_DFRST_BTTN "On when rear defrost button is on";
 CM_ SG_ 1363 DOORS_LOCK_UNLOCK "Remote signal from FOB";
 CM_ SG_ 832 LKAS_STEER "active w/ LKAS steer assist on";
 CM_ SG_ 1292 COLD_DARK_SIGNAL "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
@@ -163,4 +167,6 @@ CM_ SG_ 688 SAS_STAT "Borrowed Byte Location from i30_2014.dbc";
 CM_ SG_ 688 CHECKSUM "Borrowed Byte Location from i30_2014.dbc";
 CM_ SG_ 688 MSG_COUNT "Borrowed Byte Location from i30_2014.dbc";
 CM_ SG_ 273 GEAR_POSITION "P=000 R=111 N=110 D=101";
+CM_ SG_ 275 DRVE_MD_ECO_ON "Switches from drive mode bttn";
+CM_ SG_ 275 DRVE_MD_NRML "switches from drive mode bttn";
 VAL_ 1345 LIGHT_CONTROL_DRIVER 7 "Auto" 4 "On" 2 "DRL" ;
