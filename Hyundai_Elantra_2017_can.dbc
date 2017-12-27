@@ -44,6 +44,7 @@ BO_ 1345 DOOR_STATUS: 8 XXX
  SG_ LEFT_HAZARD_LIGHTS : 19|1@0+ (1,0) [0|1] "" XXX
  SG_ BTTN_HAZARD_LIGHT : 33|1@0+ (1,0) [0|1] "" XXX
  SG_ LIGHT_CONTROL_DRIVER : 39|3@0+ (1,0) [0|7] "" XXX
+ SG_ HEADLAMPS : 31|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 339 undefined: 8 XXX
 
@@ -69,6 +70,10 @@ BO_ 1265 SPD5: 8 XXX
  SG_ COLD_DARK6 : 31|4@0- (1,0) [0|15] "" XXX
  SG_ COLD_DARK4 : 18|1@0+ (1,0) [0|1] "" XXX
  SG_ SPEED : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ SET_BTTN_STRWHL : 1|1@0+ (1,0) [0|1] "" XXX
+ SG_ CANCEL_BTTN_STRWHL : 2|1@0+ (1,0) [0|1] "" XXX
+ SG_ CRUISE_BTTN_STRWHL : 3|1@0+ (1,0) [0|1] "" XXX
+ SG_ RES_DIS_BTTNS_STRWHL : 0|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 1456 NEW_MSG_3: 8 XXX
  SG_ CD2 : 2|1@0+ (1,0) [0|1] "" XXX
@@ -145,6 +150,8 @@ CM_ SG_ 1265 COLD_DARK2 "Signal Active when in proximity to vehicle during cold 
 CM_ SG_ 1265 COLD_DARK1 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
 CM_ SG_ 1265 COLD_DARK6 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
 CM_ SG_ 1265 COLD_DARK4 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
+CM_ SG_ 1265 SET_BTTN_STRWHL "Set -";
+CM_ SG_ 1265 RES_DIS_BTTNS_STRWHL "Both distance and RES +";
 CM_ SG_ 688 SAS_SPEED "Borrowed Byte Location from i30_2014.dbc";
 CM_ SG_ 688 SAS_STAT "Borrowed Byte Location from i30_2014.dbc";
 CM_ SG_ 688 CHECKSUM "Borrowed Byte Location from i30_2014.dbc";
