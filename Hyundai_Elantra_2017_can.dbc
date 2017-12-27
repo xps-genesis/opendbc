@@ -144,6 +144,10 @@ BO_ 275 OPS: 8 XXX
  SG_ DRVE_MD_ECO_JOINT! : 27|1@0+ (1,0) [0|1] "" XXX
  SG_ DRVE_MD_NRML_JOINT! : 31|1@0+ (1,0) [0|1] "" XXX
 
+BO_ 916 NEW_MSG_1: 8 XXX
+ SG_ BRAKE_LIGHT1 : 46|1@0+ (1,0) [0|1] "" XXX
+ SG_ BRAKE_LIGHT2 : 55|1@0+ (1,0) [0|1] "" XXX
+
 
 
 
