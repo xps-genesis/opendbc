@@ -156,3 +156,4 @@ CM_ SG_ 688 SAS_SPEED "Borrowed Byte Location from i30_2014.dbc";
 CM_ SG_ 688 SAS_STAT "Borrowed Byte Location from i30_2014.dbc";
 CM_ SG_ 688 CHECKSUM "Borrowed Byte Location from i30_2014.dbc";
 CM_ SG_ 688 MSG_COUNT "Borrowed Byte Location from i30_2014.dbc";
+VAL_ 1345 LIGHT_CONTROL_DRIVER 7 "Auto" 4 "On" 2 "DRL";
