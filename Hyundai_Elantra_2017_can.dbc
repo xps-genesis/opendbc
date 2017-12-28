@@ -57,13 +57,13 @@ BO_ 1363 DOOR_STATUS2: 8 XXX
  SG_ DOORS_LOCK_UNLOCK : 48|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 832 LKAS: 8 XXX
- SG_ LKAS_STEER : 16|8@1- (1,0) [0|255] "" XXX
  SG_ LKAS_MODE : 60|2@0+ (1,0) [0|3] "" XXX
  SG_ UNKNOWN_SIG2 : 36|4@1- (1,0) [0|15] "" XXX
  SG_ UNKNOWN_SIG1 : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ LKAS_STATUS : 48|4@1+ (1,0) [0|15] "" XXX
- SG_ LKAS_TIMEOUT_MSSG : 8|1@0+ (1,0) [0|1] "" XXX
  SG_ LKAS_ON_OFF : 2|1@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_STEERING : 23|16@0- (1,0) [0|65535] "" XXX
+ SG_ LKAS_TIMEOUT_MSSG : 8|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 1292 MISC: 8 XXX
  SG_ COLD_DARK_SIGNAL : 63|4@0+ (1,0) [0|15] "" XXX
@@ -157,8 +157,8 @@ BO_ 916 BRAKE_LIGHT: 8 XXX
 CM_ SG_ 1345 LIGHT_CONTROL_DRIVER "Auto= 111 DRL= 010 On = 100";
 CM_ SG_ 1345 REAR_DFRST_BTTN "On when rear defrost button is on";
 CM_ SG_ 1363 DOORS_LOCK_UNLOCK "Remote signal from FOB";
-CM_ SG_ 832 LKAS_STEER "active w/ LKAS steer assist on";
 CM_ SG_ 832 LKAS_MODE "01=LDW 10=STNRD LKA 11=Active LKA";
+CM_ SG_ 832 LKAS_TIMEOUT_MSSG "3rd byte initially add 4th looked like incomplete signal";
 CM_ SG_ 1292 COLD_DARK_SIGNAL "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
 CM_ SG_ 1292 CD1 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
 CM_ SG_ 1292 CD2 "Signal Active when in proximity to vehicle during cold and dark state - Doors Locked";
