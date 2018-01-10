@@ -1413,4 +1413,4 @@ BO_ 512 EMS20: 6 EMS
 
 CM_ SG_ 593 CF_Mdps_ToiActive "On When LKAS is steering";
 CM_ SG_ 832 CF_Lkas_ActToi "On When LKAS is Steering";
-CM_ SG_ 544 CYL_PRES "Brakes - Like 165 is extreme max braking";
+CM_ SG_ 544 CYL_PRES "Brakes - 80 is full braking. 155 - 165 is extreme max braking";
