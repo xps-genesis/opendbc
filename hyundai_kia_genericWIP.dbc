@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: IAP ODS _4WD BCM HUD DATC MDPS AAF_Tester AEMC SMK _4WD EPB CUBIS MTS TMU EVP CGW TPMS LPI DI_BOX SPAS EMS LCA TCU IBOX FATC AFLS FPCM SCC AHLS AVM ABS SNV OPI PGS SAS AAF Dummy LDWS_LKAS LVR ESC PSB CLU ECS ACU REA 4 + XXX 6  K 2
+BU_: IAP ODS _4WD BCM HUD DATC MDPS AAF_Tester AEMC SMK _4WD EPB CUBIS MTS TMU EVP CGW TPMS LPI DI_BOX SPAS EMS LCA TCU IBOX FATC AFLS FPCM SCC AHLS AVM ABS SNV OPI PGS SAS AAF Dummy LDWS_LKAS LVR ESC PSB CLU ECS ACU REA 4 + XXX 6 K 2
 
 
 BO_ 1532 ODS13: 5 ODS
@@ -469,7 +469,6 @@ BO_ 640 EMS13: 8 EMS
  SG_ LV_BFS_CFIRM : 1|1@1+ (1,0) [0|1] "" LPI
  SG_ LV_CRASH : 2|1@1+ (1,0) [0|1] "" LPI
  SG_ LV_VB_OFF_ACT : 3|1@1+ (1,0) [0|1] "" LPI
- SG_ L : NaN|NaN@0+ (NaN,NaN) [NaN|NaN] "P" 4
  SG_ LV_ENG_TURN : 5|1@1+ (1,0) [0|1] "" LPI
  SG_ ERR_FUEL : 8|8@1+ (1,0) [0|255] "" LPI
  SG_ EOS : 16|8@1+ (1,0) [0|255] "" LPI
@@ -477,8 +476,6 @@ BO_ 640 EMS13: 8 EMS
  SG_ N_32 : 32|8@1+ (32,0) [0|8160] "rpm" LPI
  SG_ MAF : 40|8@1+ (5.447,0) [0|1388.985] "mg/TDC" LPI
  SG_ TIA : 48|8@1+ (0.75,-48) [-48|143.25] "deg" LPI
- SG_ M : NaN|NaN@0+ (NaN,8) [NaN|1] "," +
- SG_ A : NaN|NaN@0+ (NaN,8) [NaN|1] "," +
 
 BO_ 128 EMS_DCT11: 8 EMS
  SG_ PV_AV_CAN : 0|8@1+ (0.3906,0) [0|99.603] "%" TCU
@@ -1052,10 +1049,6 @@ BO_ 1065 _4WD12: 8 _4WD
  SG_ CLU_PRES : 48|16@1+ (0.0625,-50) [-50|50] "Bar" ESC
 
 BO_ 809 EMS12: 8 EMS
- SG_ C : NaN|NaN@0+ (NaN,NaN) [NaN|0] "," 6
- SG_ T : NaN|NaN@0+ (NaN,NaN) [0|NaN] "6" ,
- SG_ O : NaN|NaN@0+ (NaN,NaN) [NaN|NaN] "C" K
- SG_ M : NaN|NaN@0+ (NaN,NaN) [NaN|6] "," 2
  SG_ TEMP_ENG : 8|8@1+ (0.75,-48) [-48|143.25] "deg" _4WD,BCM,CLU,DATC,EPB,ESC,IBOX,SMK,TCU
  SG_ MAF_FAC_ALTI_MMV : 16|8@1+ (0.00781,0) [0|1.99155] "" IBOX,TCU
  SG_ VB_OFF_ACT : 24|1@1+ (1,0) [0|1] "" IBOX,TCU
@@ -1439,9 +1432,11 @@ BO_ 1136 470: 8 XXX
 
 BO_ 304 130: 8 XXX
  SG_ Counter : 51|4@0+ (1,0) [0|4095] "" XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 320 140: 8 XXX
  SG_ Counter : 48|4@1+ (1,0) [0|15] "" XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 870 366: 8 XXX
 
@@ -1487,3 +1482,120 @@ BO_ 2004 7d4: 8 XXX
 BO_ 2008 7d8: 8 XXX
 
 BO_ 2012 7dc: 8 XXX
+
+BO_ 513 201LCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 514 202LCAN: 8 XXX
+ SG_ Alive_Counter : 7|2@0+ (1,0) [0|3] "" XXX
+
+BO_ 515 203LCAN: 8 XXX
+
+BO_ 516 204LCAN: 8 XXX
+
+BO_ 517 205LCAN: 8 XXX
+
+BO_ 522 20aLCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 523 20bLCAN: 8 XXX
+ SG_ Counter1 : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter2 : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 524 20cLCAN: 8 XXX
+
+BO_ 623 26fLCAN: 8 XXX
+
+BO_ 622 26eLCAN: 8 XXX
+
+BO_ 621 26dLCAN: 8 XXX
+ SG_ Alive_Counter : 16|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 618 26aLCAN: 8 XXX
+
+BO_ 568 238LCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 569 239LCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 570 23aLCAN: 8 XXX
+ SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 571 23bLCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 572 23cLCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 573 23dLCAN: 8 XXX
+ SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 574 23eLCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 575 23fLCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 576 240LCAN: 8 XXX
+ SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 577 241LCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 617 269LCAN: 8 XXX
+
+BO_ 578 242LCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 579 243LCAN: 8 XXX
+ SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 580 244LCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 581 245LCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 582 246LCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ Counter : 55|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 583 247LCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 584 248LCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 585 249LCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+ SG_ Counter : 55|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 586 24aLCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 587 24bLCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 588 24cLCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ Counter : 55|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 589 24dLCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 590 24eLCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 591 24fLCAN: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ Counter : 55|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 614 266LCAN: 8 XXX
+
+BO_ 615 267LCAN: 8 XXX
+
+BO_ 616 268LCAN: 8 XXX
