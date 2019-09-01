@@ -1629,3 +1629,8 @@ BO_ 2024 7e8: 8 XXX
 
 BO_ 1554 612LCAN: 8 XXX
  SG_ Counter : 13|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1848 NEW_MSG_1: 8 XXX
+ SG_ Counter1 : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Counter2 : 63|4@0+ (1,0) [0|15] "" XXX
+ SG_ Counter3 : 56|4@1+ (1,0) [0|3] "" XXX
