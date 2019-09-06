@@ -449,6 +449,7 @@ BO_ 897 MDPS11: 8 MDPS
  SG_ CF_Mdps_LKAS_FUNC : 58|1@1+ (1,0) [0|1] "flag" LDWS_LKAS
  SG_ CF_Mdps_CurrMode : 59|2@1+ (1,0) [0|3] "" LDWS_LKAS
  SG_ CF_Mdps_Type : 61|2@1+ (1,0) [0|2] "" LDWS_LKAS,SPAS
+ SG_ CF_MDPS_VSM_FUNC : 56|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 896 DI_BOX13: 8 DI_BOX
  SG_ CF_DiBox_HPreInjVConfStat : 0|8@1+ (1,0) [0|255] "" EMS
