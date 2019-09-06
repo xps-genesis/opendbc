@@ -1444,12 +1444,6 @@ BO_ 870 366: 8 XXX
 
 BO_ 854 356: 8 XXX
 
-BO_ 905 389: 8 XXX
-
-BO_ 909 38d: 8 XXX
- SG_ Checksum : 63|4@0+ (1,0) [0|15] "" XXX
- SG_ Counter : 56|4@1+ (1,0) [0|15] "" XXX
-
 BO_ 1107 453: 8 XXX
 
 BO_ 1173 495: 8 XXX
@@ -1778,3 +1772,25 @@ BO_ 1486 5ce: 8 XXX
 
 BO_ 1487 5cf: 8 XXX
  SG_ NEW_SIGNAL_1 : 7|16@0+ (1,0) [0|65535] "" XXX
+
+BO_ 905 SCC14: 8 SCC
+ SG_ ComfortBandUpper : 0|6@1+ (0.02,0) [0|1.26] "m/s^2" ESC
+ SG_ ComfortBandLower : 6|6@1+ (0.02,0) [0|1.26] "m/s^2" ESC
+ SG_ JerkUpperLimit : 12|7@1+ (0.1,0) [0|12.7] "m/s^3" ESC
+ SG_ JerkLowerLimit : 19|7@1+ (0.1,0) [0|12.7] "m/s^3" ESC
+ SG_ SCCMode : 32|3@1+ (1,0) [0|7] "" ESC
+
+BO_ 909 FCA11: 8 FCA
+ SG_ CF_VSM_Prefill : 0|1@1+ (1,0) [0|1] "" ESC
+ SG_ CF_VSM_HBACmd : 1|2@1+ (1,0) [0|3] "" ESC
+ SG_ CF_VSM_Warn : 3|2@1+ (1,0) [0|3] "" ACU,CLU,ESC
+ SG_ CF_VSM_BeltCmd : 5|3@1+ (1,0) [0|7] "" ESC
+ SG_ CR_VSM_DecCmd : 8|8@1+ (0.01,0) [0|2.55] "g" ESC
+ SG_ FCA_Status : 18|2@1+ (1,0) [0|3] "" ACU,CLU,ESC
+ SG_ FCA_CmdAct : 20|1@1+ (1,0) [0|1] "" ESC
+ SG_ FCA_StopReq : 21|1@1+ (1,0) [0|1] "" CLU,ESC
+ SG_ FCA_DrvSetStatus : 22|3@1+ (1,0) [0|7] "" CLU,ESC
+ SG_ CF_VSM_DecCmdAct : 31|1@1+ (1,0) [0|1] "" ESC
+ SG_ FCA_Failinfo : 32|3@1+ (1,0) [0|7] "" ACU,CLU,ESC
+ SG_ CR_FCA_Alive : 56|4@1+ (1,0) [0|15] "" ESC
+ SG_ CR_FCA_ChkSum : 60|4@1+ (1,0) [0|15] "" ESC
