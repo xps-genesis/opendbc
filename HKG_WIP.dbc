@@ -1423,12 +1423,12 @@ BO_ 1156 HDA11_MFC: 8 XXX
  SG_ Counter : 5|4@0+ (1,0) [0|15] "" XXX
  SG_ NEW_SIGNAL_1 : 1|2@0+ (1,0) [0|255] "" XXX
  SG_ NEW_SIGNAL_6 : 16|2@1+ (1,0) [0|3] "" XXX
- SG_ NEW_SIGNAL_2 : 50|14@1+ (1,0) [0|16383] "" XXX
  SG_ NEW_SIGNAL_3 : 49|2@0+ (1,0) [0|1] "" XXX
  SG_ NEW_SIGNAL_5 : 34|14@1+ (1,0) [0|63] "" XXX
  SG_ NEW_SIGNAL_4 : 33|2@0+ (1,0) [0|1] "" XXX
  SG_ NEW_SIGNAL_7 : 18|14@1+ (1,0) [0|63] "" XXX
- SG_ NEW_SIGNAL_8 : 7|16@0+ (1,0) [0|1] "" XXX
+ SG_ NEW_SIGNAL_8 : 13|6@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_2 : 50|14@1- (1,-4095) [0|16383] "" XXX
 
 BO_ 1384 568: 8 XXX
 
