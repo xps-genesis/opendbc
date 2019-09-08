@@ -1421,13 +1421,14 @@ BO_ 512 EMS20: 6 EMS
 
 BO_ 1156 HDA11_MFC: 8 XXX
  SG_ Counter : 5|4@0+ (1,0) [0|15] "" XXX
- SG_ PAINT1 : 13|1@0+ (1,0) [0|1] "" XXX
- SG_ PAINT2 : 23|7@0+ (1,0) [0|127] "" XXX
- SG_ PAINT3 : 29|6@0+ (1,0) [0|63] "" XXX
- SG_ PAINT4 : 47|3@0+ (1,0) [0|7] "" XXX
- SG_ PAINT5 : 48|1@0+ (1,0) [0|1] "" XXX
- SG_ PAINT6 : 55|6@0+ (1,0) [0|63] "" XXX
- SG_ PAINT7 : 61|6@0+ (1,0) [0|63] "" XXX
+ SG_ NEW_SIGNAL_1 : 1|2@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_6 : 16|2@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_2 : 50|14@1+ (1,0) [0|16383] "" XXX
+ SG_ NEW_SIGNAL_3 : 49|2@0+ (1,0) [0|1] "" XXX
+ SG_ NEW_SIGNAL_5 : 34|14@1+ (1,0) [0|63] "" XXX
+ SG_ NEW_SIGNAL_4 : 33|2@0+ (1,0) [0|1] "" XXX
+ SG_ NEW_SIGNAL_7 : 18|14@1+ (1,0) [0|63] "" XXX
+ SG_ NEW_SIGNAL_8 : 7|16@0+ (1,0) [0|1] "" XXX
 
 BO_ 1384 568: 8 XXX
 
@@ -1438,6 +1439,8 @@ BO_ 1996 7ccMFC: 8 XXX
 
 BO_ 1162 48a: 8 XXX
  SG_ Counter : 21|4@1+ (1,0) [0|3] "" XXX
+ SG_ PAINT1 : 33|1@0+ (1,0) [0|1] "" XXX
+ SG_ PAINT2 : 16|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 1136 470: 8 XXX
  SG_ Counter : 61|4@0+ (1,0) [0|15] "" XXX
@@ -1457,6 +1460,11 @@ BO_ 320 140: 8 XXX
  SG_ PAINT2 : 15|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 870 366: 8 XXX
+ SG_ PAINT1 : 7|14@0+ (1,0) [0|1023] "" XXX
+ SG_ PAINT2 : 21|14@0+ (1,0) [0|8191] "" XXX
+ SG_ PAINT3 : 9|2@0+ (1,0) [0|1] "" XXX
+ SG_ PAINT4 : 23|2@0+ (1,0) [0|3] "" XXX
+ SG_ PAINT5 : 47|8@0- (1,0) [0|15] "" XXX
 
 BO_ 854 356: 8 XXX
  SG_ PAINT1 : 32|1@0+ (1,0) [0|1] "" XXX
