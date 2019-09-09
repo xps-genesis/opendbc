@@ -1834,3 +1834,25 @@ BO_ 882 Trans_Gear2: 8 XXX
 
 BO_ 881 Trans_Gear1: 8 XXX
  SG_ Gear_Change : 12|1@0+ (1,0) [0|31] "" XXX
+
+BO_ 1448 5a8: 8 XXX
+
+BO_ 1236 4d4: 8 XXX
+
+BO_ 1291 50b: 8 XXX
+
+BO_ 1331 533: 8 XXX
+
+BO_ 1332 534: 8 XXX
+
+BO_ 1333 535: 8 XXX
+
+BO_ 1355 54b: 8 XXX
+
+BO_ 1429 595: 8 XXX
+
+BO_ 1430 596: 8 XXX
+
+BO_ 1535 5ff: 8 XXX
+
+BO_ 1476 5c4: 8 XXX
