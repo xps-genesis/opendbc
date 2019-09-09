@@ -1824,4 +1824,6 @@ BO_ 909 FCA11: 8 FCA
  SG_ CR_FCA_Alive : 56|4@1+ (1,0) [0|15] "" ESC
  SG_ CR_FCA_ChkSum : 60|4@1+ (1,0) [0|15] "" ESC
 
-BO_ 1157 LFA/HDA_MFC: 8 XXX
+BO_ 1157 LFAHDA_MFC: 8 XXX
+ SG_ LFA_USM : 28|2@0+ (1,0) [0|3] "" XXX
+ SG_ HDA_USM : 0|2@1+ (1,0) [0|3] "" XXX
