@@ -1829,5 +1829,8 @@ BO_ 1157 LFAHDA_MFC: 8 XXX
  SG_ LFA_USM : 28|2@0+ (1,0) [0|3] "" XXX
  SG_ HDA_USM : 0|2@1+ (1,0) [0|3] "" XXX
 
-BO_ 882 Trans_Gear: 8 XXX
+BO_ 882 Trans_Gear2: 8 XXX
  SG_ Gear_Stat : 23|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 881 Trans_Gear1: 8 XXX
+ SG_ Gear_Change : 12|1@0+ (1,0) [0|31] "" XXX
