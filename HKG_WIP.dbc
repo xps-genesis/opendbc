@@ -1461,12 +1461,9 @@ BO_ 320 140: 8 XXX
  SG_ PAINT1 : 7|8@0+ (1,0) [0|255] "" XXX
  SG_ PAINT2 : 15|8@0+ (1,0) [0|255] "" XXX
 
-BO_ 870 366: 8 XXX
- SG_ PAINT1 : 7|14@0+ (1,0) [0|1023] "" XXX
- SG_ PAINT2 : 21|14@0+ (1,0) [0|8191] "" XXX
- SG_ PAINT3 : 9|2@0+ (1,0) [0|1] "" XXX
- SG_ PAINT4 : 23|2@0+ (1,0) [0|3] "" XXX
- SG_ PAINT5 : 47|8@0- (1,0) [0|15] "" XXX
+BO_ 870 366_EMSSPEED: 8 XXX
+ SG_ Speed_Unit : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ Vehicle_Speed : 47|8@0+ (1,0) [0|31] "" XXX
 
 BO_ 854 356: 8 XXX
  SG_ PAINT1 : 32|1@0+ (1,0) [0|1] "" XXX
