@@ -1022,7 +1022,6 @@ BO_ 48 EMS18: 6 EMS
  SG_ CR_Ems_DutyCyc3MSV : 40|8@1+ (0.392,0) [0|100] "%" DI_BOX
 
 BO_ 1322 CLU15: 8 CLU
- SG_ CF_Clu_VehicleSpeed : 0|8@1+ (1,0) [0|255] "" BCM
  SG_ CF_Clu_InhibitP : 9|1@1+ (1,0) [0|1] "" BCM
  SG_ CF_Clu_InhibitR : 10|1@1+ (1,0) [0|1] "" BCM
  SG_ CF_Clu_InhibitN : 11|1@1+ (1,0) [0|1] "" BCM
@@ -1037,6 +1036,8 @@ BO_ 1322 CLU15: 8 CLU
  SG_ CF_Clu_HudFontSizeSet : 31|2@1+ (1,0) [0|3] "" HUD
  SG_ CF_Clu_LanguageInfo : 33|5@1+ (1,0) [0|31] "" BCM,PGS
  SG_ CF_Clu_ClusterSound : 38|1@1- (1,0) [0|0] "" BCM,CGW,FATC
+ SG_ CF_Clu_VehicleSpeed : 0|8@1+ (1,0) [0|255] "" BCM
+ SG_ CF_Clu_VehicleSpeed2 : 48|8@1+ (1,0) [0|255] "" XXX
 
 BO_ 1066 _4WD13: 6 _4WD
  SG_ _4WD_CURRENT : 0|8@1+ (0.390625,0) [-50|50] "A" TCU
