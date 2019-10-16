@@ -1881,11 +1881,11 @@ BO_ 914 S_MDPS11: 8 XXX
  SG_ CF_Mdps_Chksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ CR_Mdps_DrvTq : 8|12@1+ (1,0) [0|15] "" XXX
 
-BO_ 357 NEW_MSG_1: 8 XXX
- SG_ NEW_SIGNAL_1 : 7|12@0+ (1,0) [0|4095] "" XXX
- SG_ NEW_SIGNAL_2 : 11|12@0+ (1,0) [0|2047] "" XXX
+BO_ 357 UnknownHP1: 8 XXX
  SG_ Counter : 48|4@1+ (1,0) [0|15] "" XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_1 : 7|12@0+ (1,0) [0|4095] "" XXX
+ SG_ NEW_SIGNAL_2 : 11|12@0+ (1,0) [0|4095] "" XXX
 
 
 
