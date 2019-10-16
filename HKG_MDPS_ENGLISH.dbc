@@ -114,12 +114,12 @@ BO_ 1345 CGW1: 8 BCM
  SG_ CF_Gway_InhibitRMT : 54|2@1+ (1,0) [0|3] "" EMS,EPB,ESC,IBOX,LCA,LDWS_LKAS,MDPS,PGS,SCC,SPAS,TPMS,EPB,ESC,IBOX,LCA,LDWS_LKAS,PGS,SCC,SPAS,TPMS
 
 BO_ 832 LKAS11: 8 LDWS_LKAS
- SG_ CR_Lkas_StrToqReq : 16|11@1+ (1,-1024) [-1024|1024] "" MDPS
- SG_ CF_Lkas_ActToi : 27|1@1+ (1,0) [0|1] "" MDPS
- SG_ CF_Lkas_ToiFlt : 28|1@1+ (1,0) [0|1] "" MDPS
- SG_ CF_Lkas_MsgCount : 36|4@1+ (1,0) [0|15] "" CLU,MDPS
- SG_ CF_Lkas_Chksum : 48|8@1+ (1,0) [0|255] "" MDPS
- SG_ CF_Lkas_LdwsOpt_USM : 59|3@1+ (1,0) [0|7] "" CLU,MDPS
+ SG_ CR_LKAS_Steering_Torque_Request : 16|11@1+ (1,-1024) [-1024|1024] "" MDPS
+ SG_ CF_LKAS_Actuation : 27|1@1+ (1,0) [0|1] "" MDPS
+ SG_ CF_LKAS_Fault : 28|1@1+ (1,0) [0|1] "" MDPS
+ SG_ CF_LKAS_Message_Counter : 36|4@1+ (1,0) [0|15] "" CLU,MDPS
+ SG_ CF_LKAS_Counter : 48|8@1+ (1,0) [0|255] "" MDPS
+ SG_ CF_LKAS_LDWS_Output_User_Select_Mode : 59|3@1+ (1,0) [0|7] "" CLU,MDPS
 
 BO_ 544 ESP12: 8 ESC
  SG_ LAT_ACCEL : 0|11@1+ (0.01,-10.23) [-10.23|10.24] "m/s^2" _4WD,ECS,IBOX,LCA,LDWS_LKAS,MDPS,PSB,SCC,TCU
