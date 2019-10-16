@@ -1872,6 +1872,8 @@ BO_ 908 RSPA11: 8 RSPA
  SG_ CF_RSPA_AliveCounter : 52|4@1+ (1,0) [0|15] "" XXX
  SG_ CF_RSPA_CRC : 56|8@1+ (1,0) [0|255] "" XXX
 
+BO_ 928 LDWS11: 8 XXX
+
 
 
 
