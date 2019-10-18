@@ -1676,10 +1676,9 @@ BO_ 1850 73aLCAN: 8 XXX
 BO_ 1851 73bLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
- SG_ NEW_SIGNAL_1 : 0|16@1- (1,0) [0|7] "" XXX
- SG_ NEW_SIGNAL_3 : 16|12@1- (1,0) [0|255] "" XXX
- SG_ NEW_SIGNAL_4 : 40|12@1+ (1,0) [0|3] "" XXX
- SG_ NEW_SIGNAL_2 : 28|12@1- (1,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_1 : 2|13@1- (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_3 : 18|13@1- (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_2 : 34|13@1- (1,0) [0|65535] "" XXX
 
 BO_ 1852 73cLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
