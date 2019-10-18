@@ -1196,14 +1196,14 @@ BO_ 1056 SCC11: 8 SCC
  SG_ ObjValid : 16|1@1+ (1,0) [0|1] "" CLU,ESC,TCU
  SG_ DriverAlertDisplay : 17|2@1+ (1,0) [0|3] "" CLU,ESC
  SG_ TauGapSet : 19|3@1+ (1,0) [0|7] "" CLU,ESC,TCU
- SG_ ACC_ObjStatus : 22|2@1+ (1,0) [0|3] "" ABS,ESC
- SG_ ACC_ObjLatPos : 24|9@1+ (0.1,-20) [-20|31.1] "m" ABS,ESC
- SG_ ACC_ObjDist : 33|11@1+ (0.1,0) [0|204.7] "m" ABS,ESC
- SG_ ACC_ObjRelSpd : 44|12@1+ (0.1,-170) [-170|239.5] "m/s" ABS,ESC
  SG_ Navi_SCC_Curve_Status : 56|2@1+ (1,0) [0|3] "" CLU
  SG_ Navi_SCC_Curve_Act : 58|2@1+ (1,0) [0|3] "" CLU
  SG_ Navi_SCC_Camera_Act : 60|2@1+ (1,0) [0|3] "" CLU
  SG_ Navi_SCC_Camera_Status : 62|2@1+ (1,0) [0|3] "" CLU
+ SG_ ACC_ObjStatus : 22|2@1+ (1,0) [0|3] "" ABS,ESC
+ SG_ ACC_ObjRelSpd : 44|12@1+ (0.1,-170) [-170|239.5] "m/s" ABS,ESC
+ SG_ ACC_ObjLatPos : 24|9@1+ (0.1,-20) [-20|31.1] "m" ABS,ESC
+ SG_ ACC_ObjDist : 33|11@1+ (0.1,0) [0|204.7] "m" ABS,ESC
 
 BO_ 1312 CGW3: 8 BCM
  SG_ CR_Photosensor_LH : 0|8@1+ (78.125,0) [0|20000] "" DATC,DATC
@@ -1783,6 +1783,13 @@ BO_ 1887 75fLCAN: 8 XXX
 BO_ 1888 760LCAN: 8 XXX
 
 BO_ 1894 766LCAN: 8 XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_3 : 48|4@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_1 : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_2 : 28|12@1+ (1,0) [0|4095] "" XXX
+ SG_ NEW_SIGNAL_5 : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_4 : 8|12@1+ (1,0) [0|4095] "" XXX
 
 BO_ 1895 767LCAN: 8 XXX
 
