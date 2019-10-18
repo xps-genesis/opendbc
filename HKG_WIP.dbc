@@ -1661,6 +1661,7 @@ BO_ 1848 738LCAN: 8 XXX
  SG_ Counter1 : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ Checksum : 63|4@0+ (1,0) [0|15] "" XXX
  SG_ Counter2 : 56|4@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_1 : 7|8@0+ (1,0) [0|65535] "" XXX
 
 BO_ 1849 739LCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -1670,10 +1671,15 @@ BO_ 1850 73aLCAN: 8 XXX
  SG_ Counter : 52|4@1+ (1,0) [0|15] "" XXX
  SG_ Checksum : 56|8@1+ (1,0) [0|255] "" XXX
  SG_ STAT : 48|4@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_1 : 7|16@0+ (1,0) [0|65535] "" XXX
 
 BO_ 1851 73bLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ NEW_SIGNAL_1 : 0|16@1- (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_3 : 16|12@1- (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_4 : 40|12@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_2 : 28|12@1- (1,0) [0|65535] "" XXX
 
 BO_ 1852 73cLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -1804,6 +1810,7 @@ BO_ 1894 766LCAN: 8 XXX
  SG_ NEW_SIGNAL_1 : 24|12@1- (1,0) [0|3] "" XXX
  SG_ STAT1 : 48|4@1+ (1,0) [0|3] "" XXX
  SG_ STAT2 : 16|4@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_2 : 0|16@1- (1,0) [0|65535] "" XXX
 
 BO_ 1895 767LCAN: 8 XXX
 
