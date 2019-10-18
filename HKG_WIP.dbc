@@ -1769,10 +1769,16 @@ BO_ 1871 74fLCAN: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|31] "" XXX
 
 BO_ 1872 750LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1873 751LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1874 752LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1548 60cLCAN: 8 XXX
 
@@ -1799,10 +1805,16 @@ BO_ 1539 603LCAN: 8 XXX
 BO_ 1538 602LCAN: 8 XXX
 
 BO_ 1875 753LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1876 754LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1877 755LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1878 756LCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -1814,12 +1826,20 @@ BO_ 1879 757LCAN: 8 XXX
  SG_ Spike : 40|12@1+ (1,0) [0|8191] "" XXX
 
 BO_ 1880 758LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1881 759LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1882 75aLCAN: 8 XXX
+ SG_ CHecksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1883 75bLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1884 75cLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
