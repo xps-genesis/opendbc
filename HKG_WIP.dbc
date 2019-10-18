@@ -1655,18 +1655,17 @@ BO_ 2016 7e0: 8 XXX
 BO_ 2024 7e8: 8 XXX
 
 BO_ 1554 612LCAN_STAT: 8 XXX
- SG_ Master_Counter : 8|16@1+ (1,0) [0|65535] "" XXX
+ SG_ Master_Counter : 15|24@0+ (1,0) [0|65535] "" XXX
 
 BO_ 1848 738LCAN: 8 XXX
  SG_ Counter1 : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ Checksum : 63|4@0+ (1,0) [0|15] "" XXX
  SG_ Counter2 : 56|4@1+ (1,0) [0|3] "" XXX
- SG_ Target_Info : 0|8@1- (1,0) [0|65535] "" XXX
+ SG_ Target_Info : 7|8@0+ (1,0) [0|65535] "" XXX
 
 BO_ 1849 739LCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
- SG_ NEW_SIGNAL_1 : 24|16@1+ (1,0) [0|3] "" XXX
 
 BO_ 1850 73aLCAN: 8 XXX
  SG_ Counter : 52|4@1+ (1,0) [0|15] "" XXX
@@ -1793,11 +1792,14 @@ BO_ 1886 75eLCAN: 8 XXX
 BO_ 1537 601LCAN: 8 XXX
 
 BO_ 1904 770LCAN_STAT: 8 XXX
- SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
- SG_ Master_Counter : 16|16@1+ (1,0) [0|127] "" XXX
+ SG_ Master_Counter : 16|24@1+ (1,0) [0|127] "" XXX
+ SG_ Master_Checksum : 7|8@0+ (1,0) [0|127] "" XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1903 76fLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1887 75fLCAN: 8 XXX
 
