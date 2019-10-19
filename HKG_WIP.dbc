@@ -1695,12 +1695,12 @@ BO_ 1551 60fLCAN: 8 XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1550 60eLCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1549 60dLCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1853 73dLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -1793,46 +1793,43 @@ BO_ 1874 752LCAN: 8 XXX
 BO_ 1548 60cLCAN: 8 XXX
  SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ NEW_SIGNAL_1 : 8|9@1+ (0.1,-20) [-20|31.1] "m" XXX
 
 BO_ 1547 60bLCAN: 8 XXX
  SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1546 60aLCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1545 609LCAN: 8 XXX
  SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1544 608LCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1543 607LCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1542 606LCAN: 8 XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
  SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1541 605LCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1540 604LCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1539 603LCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1538 602LCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1875 753LCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -1884,8 +1881,9 @@ BO_ 1886 75eLCAN: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1537 601LCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ potdist1 : 0|9@1+ (0.1,0) [0|104.7] "m" XXX
+ SG_ NEW_SIGNAL_1 : 9|11@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_2 : 20|12@1+ (1,0) [0|3] "" XXX
 
 BO_ 1904 770LCAN_STAT: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
