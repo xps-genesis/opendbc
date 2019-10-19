@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: IAP ODS _4WD BCM HUD DATC MDPS AAF_Tester AEMC SMK _4WD EPB CUBIS MTS TMU EVP CGW TPMS LPI DI_BOX SPAS EMS LCA TCU IBOX FATC AFLS FPCM SCC AHLS AVM ABS SNV OPI PGS SAS AAF Dummy LDWS_LKAS LVR ESC PSB CLU ECS ACU REA 4 + XXX 6 K 2
+BU_: IAP ODS _4WD BCM HUD DATC MDPS AAF_Tester AEMC SMK _4WD EPB CUBIS MTS TMU EVP CGW TPMS LPI DI_BOX SPAS EMS LCA TCU IBOX FATC AFLS FPCM SCC AHLS AVM ABS SNV OPI PGS SAS AAF Dummy LDWS_LKAS LVR ESC PSB CLU ECS ACU REA 4 + XXX 6 K 2 MFC
 
 
 BO_ 1532 ODS13: 5 ODS
@@ -1683,24 +1683,44 @@ BO_ 1852 73cLCAN: 8 XXX
  SG_ STAT : 48|4@1+ (1,0) [0|3] "" XXX
 
 BO_ 1553 611LCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1552 610LCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1551 60fLCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1550 60eLCAN: 8 XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1549 60dLCAN: 8 XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1853 73dLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -1791,49 +1811,92 @@ BO_ 1874 752LCAN: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1548 60cLCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ NEW_SIGNAL_1 : 8|9@1+ (0.1,-20) [-20|31.1] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1547 60bLCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1546 60aLCAN: 8 XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1545 609LCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1544 608LCAN: 8 XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1543 607LCAN: 8 XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1542 606LCAN: 8 XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1541 605LCAN: 8 XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1540 604LCAN: 8 XXX
- SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1539 603LCAN: 8 XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1538 602LCAN: 8 XXX
- SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" XXX
- SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" XXX
- SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" XXX
- SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" XXX
- SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" XXX
- SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1875 753LCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -1885,7 +1948,12 @@ BO_ 1886 75eLCAN: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1537 601LCAN: 8 XXX
- SG_ ObjDist : 41|11@1+ (0.1,0) [0|204.7] "m" XXX
+ SG_ Radar_ObjLatPos : 0|9@1+ (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjLatPos_2 : 32|9@1- (0.1,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjDist_2 : 41|11@1+ (0.1,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
 
 BO_ 1904 770LCAN_STAT: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
