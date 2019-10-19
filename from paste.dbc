@@ -150,11 +150,11 @@ BO_ 1456 CLU12: 4 CLU
  SG_ CF_Clu_Odometer : 0|24@1+ (0.1,0) [0|1677721.4] "km" _4WD,AAF,BCM,CUBIS,EMS,EPB,IBOX,LDWS_LKAS,SCC,TPMS
 
 BO_ 688 SAS11: 5 MDPS
- SG_ SAS_Angle : 0|16@1- (0.1,0) [-3276.8|3276.7] "Deg" _4WD,ACU,AFLS,AVM,CLU,ECS,EMS,ESC,IBOX,LCA,LDWS_LKAS,PGS,PSB,SCC,SPAS,TCU,_4WD,ACU,AFLS,AVM,BCM,CLU,ECS,EMS,ESC,IBOX,LCA,LDWS_LKAS,PGS,PSB,SCC,SPAS,TCU
  SG_ SAS_Speed : 16|8@1+ (4,0) [0|1016] "" AFLS,ECS,ESC,IBOX,LDWS_LKAS,SCC,SPAS,TCU,AFLS,ECS,ESC,IBOX,LDWS_LKAS,SCC,SPAS,TCU
  SG_ SAS_Stat : 24|8@1+ (1,0) [0|255] "" ECS,ESC,IBOX,LDWS_LKAS,PSB,SCC,SPAS,TCU,ECS,ESC,IBOX,LDWS_LKAS,PSB,SCC,SPAS,TCU
  SG_ MsgCount : 32|4@1+ (1,0) [0|15] "" ECS,ESC,IBOX,LDWS_LKAS,PSB,SCC,SPAS,ECS,ESC,IBOX,LDWS_LKAS,PSB,SCC,SPAS
  SG_ CheckSum : 36|4@1+ (1,0) [0|15] "" ECS,EMS,ESC,IBOX,LDWS_LKAS,PSB,SCC,SPAS,ECS,EMS,ESC,IBOX,LDWS_LKAS,PSB,SCC,SPAS
+ SG_ SAS_Angle : 0|16@1- (0.1,0) [-3276.8|3276.7] "Deg" _4WD,ACU,AFLS,AVM,CLU,ECS,EMS,ESC,IBOX,LCA,LDWS_LKAS,PGS,PSB,SCC,SPAS,TCU,_4WD,ACU,AFLS,AVM,BCM,CLU,ECS,EMS,ESC,IBOX,LCA,LDWS_LKAS,PGS,PSB,SCC,SPAS,TCU
 
 BO_ 1441 ACU12: 8 ACU
  SG_ CR_Acu_SN : 0|64@1+ (1,0) [0|0] "" ODS
@@ -960,6 +960,16 @@ BO_ 64 DATC14: 8 DATC
  SG_ DATC_ADSDisp : 28|2@1+ (1,0) [0|3] "" CLU
 
 BO_ 832 LKAS11: 8 LDWS_LKAS
+ SG_ CF_Lkas_FcwOpt : 32|2@1+ (1,0) [0|3] "" CLU
+ SG_ CF_Lkas_HbaOpt : 34|2@1+ (1,0) [0|1] "" BCM,CGW
+ SG_ CF_Lkas_MsgCount : 36|4@1+ (1,0) [0|15] "" CLU,MDPS
+ SG_ CF_Lkas_FcwSysState : 40|3@1+ (1,0) [0|7] "" CLU
+ SG_ CF_Lkas_FcwCollisionWarning : 43|2@1+ (1,0) [0|3] "" CLU
+ SG_ CF_Lkas_FusionState : 45|2@1+ (1,0) [0|3] "" SCC
+ SG_ CF_Lkas_Chksum : 48|8@1+ (1,0) [0|255] "" MDPS
+ SG_ CF_Lkas_FcwOpt_USM : 56|3@1+ (1,0) [0|7] "" CLU
+ SG_ PAINT1 : 47|1@1+ (1,0) [0|3] "" XXX
+ SG_ PAINT2 : 63|2@0+ (1,0) [0|3] "" XXX
  SG_ CF_Lkas_Bca_R : 0|2@1+ (1,0) [0|3] "" CLU,IBOX,PSB
  SG_ CF_Lkas_LdwsSysState : 2|4@1+ (1,0) [0|15] "" CLU,IBOX,PSB
  SG_ CF_Lkas_SysWarning : 6|4@1+ (1,0) [0|15] "" BCM,CLU
@@ -971,17 +981,7 @@ BO_ 832 LKAS11: 8 LDWS_LKAS
  SG_ CF_Lkas_ActToi : 27|1@1+ (1,0) [0|1] "" MDPS
  SG_ CF_Lkas_ToiFlt : 28|1@1+ (1,0) [0|1] "" MDPS
  SG_ CF_Lkas_HbaSysState : 29|3@1+ (1,0) [0|7] "" BCM,CLU
- SG_ CF_Lkas_FcwOpt : 32|2@1+ (1,0) [0|3] "" CLU
- SG_ CF_Lkas_HbaOpt : 34|2@1+ (1,0) [0|1] "" BCM,CGW
- SG_ CF_Lkas_MsgCount : 36|4@1+ (1,0) [0|15] "" CLU,MDPS
- SG_ CF_Lkas_FcwSysState : 40|3@1+ (1,0) [0|7] "" CLU
- SG_ CF_Lkas_FcwCollisionWarning : 43|2@1+ (1,0) [0|3] "" CLU
- SG_ CF_Lkas_FusionState : 45|2@1+ (1,0) [0|3] "" SCC
- SG_ CF_Lkas_Chksum : 48|8@1+ (1,0) [0|255] "" MDPS
- SG_ CF_Lkas_FcwOpt_USM : 56|3@1+ (1,0) [0|7] "" CLU
  SG_ CF_Lkas_LdwsOpt_USM : 59|3@1+ (1,0) [0|7] "" CLU,MDPS
- SG_ PAINT1 : 47|1@1+ (1,0) [0|3] "" XXX
- SG_ PAINT2 : 63|2@0+ (1,0) [0|3] "" XXX
 
 BO_ 1342 LKAS12: 6 LDWS_LKAS
  SG_ CF_Lkas_TsrSlifOpt : 10|2@1+ (1,0) [0|3] "" CLU
@@ -992,6 +992,7 @@ BO_ 1342 LKAS12: 6 LDWS_LKAS
  SG_ CF_LkasDawStatus : 40|3@1+ (1,0) [0|7] "" CLU
  SG_ CF_Lkas_Daw_USM : 39|3@0+ (1,0) [0|7] "" CLU
  SG_ PAINT1 : 47|5@0+ (1,0) [0|31] "" XXX
+ SG_ CF_Lkas_Cnt : 7|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1338 TMU_GW_E_01: 8 CLU
  SG_ CF_Gway_TeleReqDrLock : 0|2@1+ (1,0) [0|3] "" BCM
@@ -1022,7 +1023,6 @@ BO_ 48 EMS18: 6 EMS
  SG_ CR_Ems_DutyCyc3MSV : 40|8@1+ (0.392,0) [0|100] "%" DI_BOX
 
 BO_ 1322 CLU15: 8 CLU
- SG_ CF_Clu_VehicleSpeed : 0|8@1+ (1,0) [0|255] "" BCM
  SG_ CF_Clu_InhibitP : 9|1@1+ (1,0) [0|1] "" BCM
  SG_ CF_Clu_InhibitR : 10|1@1+ (1,0) [0|1] "" BCM
  SG_ CF_Clu_InhibitN : 11|1@1+ (1,0) [0|1] "" BCM
@@ -1037,6 +1037,8 @@ BO_ 1322 CLU15: 8 CLU
  SG_ CF_Clu_HudFontSizeSet : 31|2@1+ (1,0) [0|3] "" HUD
  SG_ CF_Clu_LanguageInfo : 33|5@1+ (1,0) [0|31] "" BCM,PGS
  SG_ CF_Clu_ClusterSound : 38|1@1- (1,0) [0|0] "" BCM,CGW,FATC
+ SG_ CF_Clu_VehicleSpeed : 0|8@1+ (1,0) [0|255] "" BCM
+ SG_ CF_Clu_VehicleSpeed2 : 48|8@1+ (1,0) [0|255] "" XXX
 
 BO_ 1066 _4WD13: 6 _4WD
  SG_ _4WD_CURRENT : 0|8@1+ (0.390625,0) [-50|50] "A" TCU
@@ -1166,7 +1168,6 @@ BO_ 1057 SCC12: 8 SCC
  SG_ ACCMode : 13|2@1+ (1,0) [0|3] "" CLU,ESC,IBOX,TCU
  SG_ StopReq : 15|1@1+ (1,0) [0|1] "" EPB,ESC
  SG_ CR_VSM_DecCmd : 16|8@1+ (0.01,0) [0|2.55] "g" ESC
- SG_ aReqMax : 24|11@1+ (0.01,-10.23) [-10.23|10.24] "m/s^2" EMS,ESC,TCU
  SG_ TakeOverReq : 35|1@1+ (1,0) [0|1] "" CLU,ESC,TCU
  SG_ PreFill : 36|1@1+ (1,0) [0|1] "" ESC,TCU
  SG_ aReqMin : 37|11@1+ (0.01,-10.23) [-10.23|10.24] "m/s^2" EMS,ESC,TCU
@@ -1177,6 +1178,7 @@ BO_ 1057 SCC12: 8 SCC
  SG_ AEB_StopReq : 55|1@1+ (1,0) [0|1] "" CLU,ESC
  SG_ CR_VSM_Alive : 56|4@1+ (1,0) [0|15] "" ESC,PSB
  SG_ CR_VSM_ChkSum : 60|4@1+ (1,0) [0|15] "" ESC,PSB
+ SG_ aReqMax : 24|11@1+ (0.01,-10.23) [-10.23|10.24] "m/s^2" EMS,ESC,TCU
 
 BO_ 1313 GW_DDM_PE: 8 BCM
  SG_ C_DRVDoorStatus : 0|2@1+ (1,0) [0|3] "" CLU
@@ -1194,14 +1196,14 @@ BO_ 1056 SCC11: 8 SCC
  SG_ ObjValid : 16|1@1+ (1,0) [0|1] "" CLU,ESC,TCU
  SG_ DriverAlertDisplay : 17|2@1+ (1,0) [0|3] "" CLU,ESC
  SG_ TauGapSet : 19|3@1+ (1,0) [0|7] "" CLU,ESC,TCU
- SG_ ACC_ObjStatus : 22|2@1+ (1,0) [0|3] "" ABS,ESC
- SG_ ACC_ObjLatPos : 24|9@1+ (0.1,-20) [-20|31.1] "m" ABS,ESC
- SG_ ACC_ObjDist : 33|11@1+ (0.1,0) [0|204.7] "m" ABS,ESC
- SG_ ACC_ObjRelSpd : 44|12@1+ (0.1,-170) [-170|239.5] "m/s" ABS,ESC
  SG_ Navi_SCC_Curve_Status : 56|2@1+ (1,0) [0|3] "" CLU
  SG_ Navi_SCC_Curve_Act : 58|2@1+ (1,0) [0|3] "" CLU
  SG_ Navi_SCC_Camera_Act : 60|2@1+ (1,0) [0|3] "" CLU
  SG_ Navi_SCC_Camera_Status : 62|2@1+ (1,0) [0|3] "" CLU
+ SG_ ACC_ObjStatus : 22|2@1+ (1,0) [0|3] "" ABS,ESC
+ SG_ ACC_ObjRelSpd : 44|12@1+ (0.1,-170) [-170|239.5] "m/s" ABS,ESC
+ SG_ ACC_ObjLatPos : 24|9@1+ (0.1,-20) [-20|31.1] "m" ABS,ESC
+ SG_ ACC_ObjDist : 33|11@1+ (0.1,0) [0|204.7] "m" ABS,ESC
 
 BO_ 1312 CGW3: 8 BCM
  SG_ CR_Photosensor_LH : 0|8@1+ (78.125,0) [0|20000] "" DATC,DATC
@@ -1367,6 +1369,7 @@ BO_ 1290 SCC13: 8 SCC
  SG_ SCCDrvModeRValue : 0|3@1+ (1,0) [0|7] "" CLU
  SG_ SCC_Equip : 3|1@1+ (1,0) [0|1] "" ESC
  SG_ AebDrvSetStatus : 4|3@1+ (1,0) [0|7] "" CLU,ESC
+ SG_ Lead_Veh_Dep_Alert_USM : 13|2@0+ (1,0) [0|3] "" XXX
 
 BO_ 1287 TCS15: 4 ESC
  SG_ ABS_W_LAMP : 0|1@1+ (1,0) [0|1] "" _4WD,CLU,CUBIS,IBOX
@@ -1460,12 +1463,12 @@ BO_ 320 140: 8 XXX
  SG_ PAINT1 : 7|8@0+ (1,0) [0|255] "" XXX
  SG_ PAINT2 : 15|8@0+ (1,0) [0|255] "" XXX
 
-BO_ 870 366: 8 XXX
- SG_ PAINT1 : 7|14@0+ (1,0) [0|1023] "" XXX
- SG_ PAINT2 : 21|14@0+ (1,0) [0|8191] "" XXX
- SG_ PAINT3 : 9|2@0+ (1,0) [0|1] "" XXX
- SG_ PAINT4 : 23|2@0+ (1,0) [0|3] "" XXX
- SG_ PAINT5 : 47|8@0- (1,0) [0|15] "" XXX
+BO_ 870 366_EMS: 8 EMS
+ SG_ EMS_Related : 23|16@0+ (1,0) [0|65535] "" XXX
+ SG_ N : 7|16@0+ (1,0.25) [0|16383.75] "rpm" XXX
+ SG_ TQFR : 39|8@0+ (0.390625,0) [0|99.6094] "%" XXX
+ SG_ SWI_IGK : 48|1@0+ (1,0) [0|1] "" XXX
+ SG_ VS : 40|8@1+ (1,0) [0|255] "km/h" MDPS
 
 BO_ 854 356: 8 XXX
  SG_ PAINT1 : 32|1@0+ (1,0) [0|1] "" XXX
@@ -1651,149 +1654,277 @@ BO_ 2016 7e0: 8 XXX
 
 BO_ 2024 7e8: 8 XXX
 
-BO_ 1554 612LCAN: 8 XXX
- SG_ Counter : 13|4@0+ (1,0) [0|15] "" XXX
+BO_ 1554 612LCAN_STAT: 8 XXX
+ SG_ Master_Counter : 15|24@0+ (1,0) [0|65535] "" XXX
 
 BO_ 1848 738LCAN: 8 XXX
  SG_ Counter1 : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ Checksum : 63|4@0+ (1,0) [0|15] "" XXX
  SG_ Counter2 : 56|4@1+ (1,0) [0|3] "" XXX
+ SG_ Target_Info : 7|8@0+ (1,0) [0|65535] "" XXX
 
 BO_ 1849 739LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1850 73aLCAN: 8 XXX
+ SG_ Counter : 52|4@1+ (1,0) [0|15] "" XXX
+ SG_ Checksum : 56|8@1+ (1,0) [0|255] "" XXX
+ SG_ STAT : 48|4@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_1 : 7|16@0+ (1,0) [0|65535] "" XXX
 
 BO_ 1851 73bLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1852 73cLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ STAT : 48|4@1+ (1,0) [0|3] "" XXX
 
 BO_ 1553 611LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 42|16@1+ (1,0) [0|3] "" XXX
 
 BO_ 1552 610LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1551 60fLCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1550 60eLCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1549 60dLCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1853 73dLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1854 73eLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1855 73fLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1856 740LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1857 741LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|3] "" XXX
 
 BO_ 1858 742LCAN: 8 XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1859 734LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1860 744LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1861 745LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1862 746LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1863 747LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1864 748LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1865 749LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1866 74aLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1867 74bLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1868 74cLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1869 74dLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1870 74eLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1871 74fLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|31] "" XXX
 
 BO_ 1872 750LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1873 751LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1874 752LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1548 60cLCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1547 60bLCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1546 60aLCAN: 8 XXX
- SG_ NEW_SIGNAL_1 : 7|24@0+ (1,0) [0|16777215] "" XXX
- SG_ NEW_SIGNAL_2 : 39|24@0+ (1,0) [0|16777215] "" XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1545 609LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1544 608LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1543 607LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1542 606LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1541 605LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1540 604LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1539 603LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1538 602LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1875 753LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1876 754LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1877 755LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1878 756LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1879 757LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Spike : 40|12@1+ (1,0) [0|8191] "" XXX
 
 BO_ 1880 758LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1881 759LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1882 75aLCAN: 8 XXX
+ SG_ CHecksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1883 75bLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1884 75cLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1885 75dLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1886 75eLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1537 601LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 47|11@1+ (0.1,0) [0|204.7] "m" XXX
 
-BO_ 1904 770LCAN: 8 XXX
+BO_ 1904 770LCAN_STAT: 8 XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Master_Counter : 16|24@1+ (1,0) [0|127] "" XXX
+ SG_ Master_Checksum : 7|8@0+ (1,0) [0|127] "" XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1903 76fLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1887 75fLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1888 760LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1894 766LCAN: 8 XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_1 : 24|12@1- (1,0) [0|3] "" XXX
+ SG_ STAT1 : 48|4@1+ (1,0) [0|3] "" XXX
+ SG_ STAT2 : 16|4@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_2 : 0|16@1- (1,0) [0|65535] "" XXX
 
 BO_ 1895 767LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1902 76eLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1896 768LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ POS_STAT : 7|3@0+ (1,0) [0|7] "" XXX
 
 BO_ 1897 769LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1899 76bLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1900 76cLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ POS_STAT : 7|3@0+ (1,0) [0|7] "" XXX
 
 BO_ 1901 76dLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1486 5ce: 8 XXX
  SG_ NEW_SIGNAL_1 : 23|24@0+ (1,0) [0|16777215] "" XXX
@@ -1827,3 +1958,148 @@ BO_ 909 FCA11: 8 FCA
 BO_ 1157 LFAHDA_MFC: 8 XXX
  SG_ LFA_USM : 28|2@0+ (1,0) [0|3] "" XXX
  SG_ HDA_USM : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 882 Trans_Gear2: 8 XXX
+ SG_ Gear_Stat : 23|8@0+ (1,0) [0|255] "" XXX
+ SG_ VS : 7|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 881 Trans_Gear1: 8 XXX
+ SG_ Gear_Change : 12|1@0+ (1,0) [0|31] "" XXX
+ SG_ VS : 39|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 1448 5a8: 8 XXX
+
+BO_ 1236 4d4: 8 XXX
+
+BO_ 1291 50b: 8 XXX
+
+BO_ 1331 533: 8 XXX
+
+BO_ 1332 534: 8 XXX
+
+BO_ 1333 535: 8 XXX
+
+BO_ 1355 54b: 8 XXX
+
+BO_ 1429 595: 8 XXX
+
+BO_ 1430 596: 8 XXX
+
+BO_ 1535 5ff: 8 XXX
+
+BO_ 1476 5c4: 8 XXX
+
+BO_ 908 RSPA11: 8 RSPA
+ SG_ CF_RSPA_State : 0|4@1+ (1,0) [0|15] "" XXX
+ SG_ CF_RSPA_Act : 4|2@1+ (1,0) [0|3] "" XXX
+ SG_ CF_RSPA_DecCmd : 6|2@1+ (1,0) [0|3] "" XXX
+ SG_ CF_RSPA_Trgt_Spd : 8|10@1+ (0.01,0) [0|10.23] "km/h" XXX
+ SG_ CF_RSPA_StopReq : 18|1@1+ (1,0) [0|2] "" XXX
+ SG_ CR_RSPA_EPB_Req : 22|2@1+ (1,0) [0|3] "" XXX
+ SG_ CF_RSPA_ACC_ACT : 50|1@1+ (1,0) [0|2] "" XXX
+ SG_ CF_RSPA_AliveCounter : 52|4@1+ (1,0) [0|15] "" XXX
+ SG_ CF_RSPA_CRC : 56|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 928 LDWS11: 8 XXX
+
+BO_ 914 S_MDPS11: 8 XXX
+ SG_ CR_Mdps_StrAng : 24|16@1- (1,0) [0|65535] "" XXX
+ SG_ CF_Mdps_Stat : 0|4@1+ (1,0) [0|15] "" XXX
+ SG_ CF_Mdps_AliveCnt : 47|8@0+ (1,0) [0|255] "" XXX
+ SG_ CF_Mdps_Chksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ CR_Mdps_DrvTq : 8|12@1+ (1,0) [0|15] "" XXX
+
+BO_ 357 S_MDPS12: 8 XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_2 : 12|12@1+ (1,0) [0|4095] "" XXX
+ SG_ NEW_SIGNAL_1 : 0|12@1+ (1,0) [0|4095] "" XXX
+
+BO_ 272 110: 8 XXX
+
+BO_ 497 1f1: 8 XXX
+
+BO_ 24 18: 8 XXX
+
+BO_ 288 120: 8 XXX
+
+BO_ 672 2a0: 8 XXX
+
+BO_ 704 2c0: 8 XXX
+
+BO_ 880 370: 8 XXX
+
+BO_ 848 350: 8 XXX
+
+BO_ 898 382: 8 XXX
+
+BO_ 901 385: 8 XXX
+
+BO_ 904 388: 8 XXX
+
+BO_ 52 34: 8 XXX
+
+BO_ 1087 43f: 8 XXX
+
+BO_ 1088 440: 8 XXX
+
+BO_ 1072 430: 8 XXX
+
+BO_ 1200 4b0: 8 XXX
+
+BO_ 1201 4b1: 8 XXX
+
+BO_ 1264 4f0: 8 XXX
+
+BO_ 1266 4f2: 8 XXX
+
+BO_ 1075 433: 8 XXX
+
+BO_ 1285 505: 8 XXX
+
+BO_ 1286 506: 8 XXX
+
+BO_ 1461 5b5: 8 XXX
+
+BO_ 1296 510: 8 XXX
+
+BO_ 1435 59b: 8 XXX
+
+BO_ 1508 5e4: 8 XXX
+
+BO_ 80 50: 8 XXX
+
+BO_ 1306 51a: 8 XXX
+
+BO_ 1347 543: 8 XXX
+
+BO_ 1520 5f0: 8 XXX
+
+BO_ 1442 5a2: 8 XXX
+
+BO_ 1616 650: 8 XXX
+
+BO_ 1680 690: 8 XXX
+
+BO_ 2015 7df: 8 XXX
+
+BO_ 2025 7e9: 8 XXX
+
+BO_ 1248 4e0: 8 XXX
+
+BO_ 1249 4e1: 8 XXX
+
+BO_ 1251 4e3: 8 XXX
+
+BO_ 1344 540: 8 XXX
+
+BO_ 1283 503: 8 XXX
+
+BO_ 1284 504: 8 XXX
+
+BO_ 1343 NEW_MSG_1: 8 XXX
+
+
+
+
+CM_ SG_ 1136 Counter "MSSG 470 is relied on by MDPS";
