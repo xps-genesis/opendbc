@@ -1937,6 +1937,7 @@ BO_ 909 FCA11: 8 FCA
  SG_ FCA_Failinfo : 32|3@1+ (1,0) [0|7] "" ACU,CLU,ESC
  SG_ CR_FCA_Alive : 56|4@1+ (1,0) [0|15] "" ESC
  SG_ CR_FCA_ChkSum : 60|4@1+ (1,0) [0|15] "" ESC
+ SG_ CF_FCA_Paint : 16|2@1+ (1,0) [0|1] "" XXX
 
 BO_ 1157 LFAHDA_MFC: 8 XXX
  SG_ LFA_USM : 28|2@0+ (1,0) [0|3] "" XXX
