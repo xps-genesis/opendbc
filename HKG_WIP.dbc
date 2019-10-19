@@ -1881,9 +1881,7 @@ BO_ 1886 75eLCAN: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1537 601LCAN: 8 XXX
- SG_ potdist1 : 0|9@1+ (0.1,0) [0|104.7] "m" XXX
- SG_ NEW_SIGNAL_1 : 9|11@1+ (1,0) [0|3] "" XXX
- SG_ NEW_SIGNAL_2 : 20|12@1+ (1,0) [0|3] "" XXX
+ SG_ ObjDist : 1|11@1+ (0.1,0) [0|204.7] "m" XXX
 
 BO_ 1904 770LCAN_STAT: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
