@@ -1815,8 +1815,8 @@ BO_ 1543 607LCAN: 8 XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1542 606LCAN: 8 XXX
- SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
  SG_ potdist2 : 51|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
 
 BO_ 1541 605LCAN: 8 XXX
  SG_ potdist1 : 19|11@1+ (0.1,0) [0|3] "m" XXX
