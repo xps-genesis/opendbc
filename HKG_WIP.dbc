@@ -1168,7 +1168,6 @@ BO_ 1057 SCC12: 8 SCC
  SG_ ACCMode : 13|2@1+ (1,0) [0|3] "" CLU,ESC,IBOX,TCU
  SG_ StopReq : 15|1@1+ (1,0) [0|1] "" EPB,ESC
  SG_ CR_VSM_DecCmd : 16|8@1+ (0.01,0) [0|2.55] "g" ESC
- SG_ aReqMax : 24|11@1+ (0.01,-10.23) [-10.23|10.24] "m/s^2" EMS,ESC,TCU
  SG_ TakeOverReq : 35|1@1+ (1,0) [0|1] "" CLU,ESC,TCU
  SG_ PreFill : 36|1@1+ (1,0) [0|1] "" ESC,TCU
  SG_ aReqMin : 37|11@1+ (0.01,-10.23) [-10.23|10.24] "m/s^2" EMS,ESC,TCU
@@ -1179,6 +1178,7 @@ BO_ 1057 SCC12: 8 SCC
  SG_ AEB_StopReq : 55|1@1+ (1,0) [0|1] "" CLU,ESC
  SG_ CR_VSM_Alive : 56|4@1+ (1,0) [0|15] "" ESC,PSB
  SG_ CR_VSM_ChkSum : 60|4@1+ (1,0) [0|15] "" ESC,PSB
+ SG_ aReqMax : 24|11@1+ (0.01,-10.23) [-10.23|10.24] "m/s^2" EMS,ESC,TCU
 
 BO_ 1313 GW_DDM_PE: 8 BCM
  SG_ C_DRVDoorStatus : 0|2@1+ (1,0) [0|3] "" CLU
@@ -1801,8 +1801,10 @@ BO_ 1541 605LCAN: 8 XXX
 BO_ 1540 604LCAN: 8 XXX
 
 BO_ 1539 603LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 52|13@0+ (1,0) [0|8191] "" XXX
 
 BO_ 1538 602LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 53|10@1+ (1,0) [0|3] "" XXX
 
 BO_ 1875 753LCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -1854,6 +1856,7 @@ BO_ 1886 75eLCAN: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1537 601LCAN: 8 XXX
+ SG_ NEW_SIGNAL_1 : 27|9@1+ (1,0) [0|3] "" XXX
 
 BO_ 1904 770LCAN_STAT: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
@@ -1892,6 +1895,7 @@ BO_ 1902 76eLCAN: 8 XXX
 BO_ 1896 768LCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ POS_STAT : 7|3@0+ (1,0) [0|7] "" XXX
 
 BO_ 1897 769LCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -1904,6 +1908,7 @@ BO_ 1899 76bLCAN: 8 XXX
 BO_ 1900 76cLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ POS_STAT : 7|3@0+ (1,0) [0|7] "" XXX
 
 BO_ 1901 76dLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -1937,7 +1942,6 @@ BO_ 909 FCA11: 8 FCA
  SG_ FCA_Failinfo : 32|3@1+ (1,0) [0|7] "" ACU,CLU,ESC
  SG_ CR_FCA_Alive : 56|4@1+ (1,0) [0|15] "" ESC
  SG_ CR_FCA_ChkSum : 60|4@1+ (1,0) [0|15] "" ESC
- SG_ CF_FCA_Paint : 16|2@1+ (1,0) [0|1] "" XXX
 
 BO_ 1157 LFAHDA_MFC: 8 XXX
  SG_ LFA_USM : 28|2@0+ (1,0) [0|3] "" XXX
