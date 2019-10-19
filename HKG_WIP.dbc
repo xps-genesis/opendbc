@@ -1519,8 +1519,10 @@ BO_ 514 202LCAN: 8 XXX
  SG_ Alive_Counter : 7|2@0+ (1,0) [0|3] "" XXX
 
 BO_ 515 203LCAN: 8 XXX
- SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
- SG_ Counter : 40|16@1+ (1,0) [0|3] "" XXX
+ SG_ Counter_2 : 40|16@1+ (1,0) [0|3] "" XXX
+ SG_ Checksum_2 : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Checksum : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 8|16@1+ (1,0) [0|255] "" XXX
 
 BO_ 516 204LCAN: 8 XXX
 
