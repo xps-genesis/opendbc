@@ -1667,7 +1667,7 @@ BO_ 1848 738LCAN: 8 XXX
  SG_ Counter2 : 56|4@1+ (1,0) [0|3] "" XXX
  SG_ Target_Info : 0|8@1- (1,0) [0|65535] "" XXX
 
-BO_ 1849 739LCAN: 8 XXX
+BO_ 1849 V_OptData_739: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ Vision_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" XXX
