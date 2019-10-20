@@ -1671,7 +1671,7 @@ BO_ 1849 739LCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ Vision_ObjDist : 9|11@1+ (0.1,0) [0|204.7] "m" XXX
- SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjLatPos : 0|9@1- (0.1,0) [-20|31.1] "m" XXX
 
 BO_ 1850 73aLCAN: 8 XXX
  SG_ Counter : 52|4@1+ (1,0) [0|15] "" XXX
