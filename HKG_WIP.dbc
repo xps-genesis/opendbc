@@ -2005,6 +2005,8 @@ BO_ 1896 768LCAN_StaticInfo: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ POS_STAT : 7|3@0+ (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_1 : 8|3@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_2 : 13|3@1+ (1,0) [0|7] "" XXX
 
 BO_ 1897 769LCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
