@@ -1925,36 +1925,36 @@ BO_ 1878 756LCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
-BO_ 1879 757LCAN: 8 XXX
+BO_ 1879 757LCAN_0120: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter_Master : 40|8@1+ (1,0) [0|8191] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
-BO_ 1880 758LCAN: 8 XXX
+BO_ 1880 758LCAN_0120: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
-BO_ 1881 759LCAN: 8 XXX
+BO_ 1881 759LCAN_0120: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
-BO_ 1882 75aLCAN: 8 XXX
+BO_ 1882 75aLCAN_0120: 8 XXX
  SG_ CHecksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
-BO_ 1883 75bLCAN: 8 XXX
+BO_ 1883 75bLCAN_0120: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
-BO_ 1884 75cLCAN: 8 XXX
+BO_ 1884 75cLCAN_0120: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
-BO_ 1885 75dLCAN: 8 XXX
+BO_ 1885 75dLCAN_0120: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
-BO_ 1886 75eLCAN: 8 XXX
+BO_ 1886 75eLCAN_0120: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
@@ -1977,11 +1977,11 @@ BO_ 1903 76fLCAN: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ NEW_SIGNAL_1 : 9|11@1+ (0.1,0) [0|7] "" XXX
 
-BO_ 1887 75fLCAN: 8 XXX
+BO_ 1887 75fLCAN_0120: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
-BO_ 1888 760LCAN: 8 XXX
+BO_ 1888 760LCAN_0120: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
