@@ -1548,9 +1548,11 @@ BO_ 618 26aLCAN: 8 XXX
 
 BO_ 568 238LCAN: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_1 : 2|12@1+ (1,0) [0|3] "" XXX
 
 BO_ 569 239LCAN: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_1 : 8|8@1+ (0.1,0) [0|3] "" XXX
 
 BO_ 570 23aLCAN: 8 XXX
  SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
