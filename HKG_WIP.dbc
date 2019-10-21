@@ -1672,9 +1672,9 @@ BO_ 1849 V_OptData_739: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
  SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
- SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
  SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
  SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
 
 BO_ 1850 V_OptData_73a: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
