@@ -1548,23 +1548,25 @@ BO_ 618 26aLCAN_R: 8 XXX
 
 BO_ 568 238LCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
- SG_ objdist : 28|12@1+ (0.05,0) [0|3] "" XXX
- SG_ NEW_SIGNAL_1 : 2|11@1+ (0.1,0) [0|3] "m" XXX
+ SG_ NEW_SIGNAL_1 : 24|8@1- (0.1,0) [-20|31.1] "m" XXX
 
 BO_ 569 239LCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
- SG_ NEW_SIGNAL_1 : 8|8@1+ (0.1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_1 : 3|8@1- (0.1,0) [-20|31.1] "" XXX
+ SG_ NEW_SIGNAL_2 : 24|8@1- (0.1,0) [0|255] "" XXX
 
 BO_ 570 23aLCAN_V: 8 XXX
  SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_1 : 24|8@1- (0.1,0) [0|255] "" XXX
 
 BO_ 571 23bLCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
  SG_ NEW_SIGNAL_1 : 2|11@1+ (0.01,0) [0|3] "" XXX
- SG_ NEW_SIGNAL_2 : 16|8@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_2 : 24|8@1- (0.1,0) [0|3] "" XXX
 
 BO_ 572 23cLCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_1 : 24|8@1- (0.1,0) [0|255] "" XXX
 
 BO_ 573 23dLCAN_V: 8 XXX
  SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
@@ -1584,6 +1586,7 @@ BO_ 577 241LCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
 
 BO_ 617 269LCAN_R: 8 XXX
+ SG_ NEW_SIGNAL_1 : 0|16@1+ (0.1,0) [0|3] "" XXX
 
 BO_ 578 242LCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
