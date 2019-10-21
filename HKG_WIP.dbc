@@ -1890,11 +1890,11 @@ BO_ 1868 V_OptData_74c: 8 XXX
 BO_ 1869 V_OptData_74d: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
- SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
  SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
  SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
  SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
  SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
 
 BO_ 1870 V_OptData_74e: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -1903,7 +1903,7 @@ BO_ 1870 V_OptData_74e: 8 XXX
  SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
  SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
  SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
- SG_ Vision_ObjLatPos : 0|8@1- (0.1,-20) [-20|31.1] "m" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
 
 BO_ 1871 V_OptData_74f: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
