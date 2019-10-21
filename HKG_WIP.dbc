@@ -1559,6 +1559,8 @@ BO_ 570 23aLCAN: 8 XXX
 
 BO_ 571 23bLCAN: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_1 : 2|11@1+ (0.01,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_2 : 16|8@1+ (1,0) [0|3] "" XXX
 
 BO_ 572 23cLCAN: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
