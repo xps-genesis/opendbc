@@ -1670,23 +1670,23 @@ BO_ 1848 738LCAN: 8 XXX
 BO_ 1849 V_OptData_739: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
- SG_ Vision_ObjDist : 8|12@1+ (0.05,0) [0|3] "" XXX
- SG_ Vision_ObjDist2 : 40|12@1+ (0.05,0) [0|3] "" XXX
- SG_ Vision_ObjLatPos2 : 32|8@1- (0.1,0) [0|3] "" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "" XXX
  SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
  SG_ Vision_ObjLatPos : 0|8@1+ (0.1,-20) [-20|31.1] "m" XXX
 
 BO_ 1850 73aLCAN: 8 XXX
  SG_ Counter : 52|4@1+ (1,0) [0|15] "" XXX
  SG_ Checksum : 56|8@1+ (1,0) [0|255] "" XXX
- SG_ NEW_SIGNAL_3 : 39|8@0+ (1,0) [0|3] "" XXX
  SG_ Vision_ObjRelSpd2 : 0|8@1+ (0.1,0) [0|65535] "m/s" XXX
  SG_ Vision_ObjLatPos : 16|12@1+ (0.01,-20) [-20|31.1] "m" XXX
+ SG_ NEW_SIGNAL_3 : 32|8@1+ (1.2,0) [0|3] "" XXX
 
 BO_ 1851 73bLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
- SG_ NEW_SIGNAL_1 : 0|9@1- (0.1,0) [0|3] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|255] "m" XXX
 
 BO_ 1852 73cLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -1964,9 +1964,9 @@ BO_ 1537 R_OptData_601: 8 XXX
  SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
  SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
  SG_ Radar_ObjDist : 8|12@1+ (0.05,0) [0|204.7] "m" MFC
- SG_ Radar_ObjLatPos : 0|8@1+ (0.1,-20) [-20|31.1] "m" MFC
  SG_ Radar_ObjLatPos_2 : 32|8@1+ (0.1,-20) [-20|31.1] "m" MFC
  SG_ Radar_ObjDist_2 : 40|12@1+ (0.05,0) [0|204.7] "m" MFC
+ SG_ Radar_ObjLatPos : 0|8@1+ (0.1,-20) [-20|31.1] "m" MFC
 
 BO_ 1904 V_Stat: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
