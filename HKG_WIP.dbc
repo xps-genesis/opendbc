@@ -1496,7 +1496,8 @@ BO_ 1348 544: 8 XXX
 
 BO_ 1180 49c: 8 XXX
 
-BO_ 1186 4a2: 8 XXX
+BO_ 1186 4a2SCC: 8 XXX
+ SG_ Paint_1 : 0|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 1470 5be: 8 XXX
 
