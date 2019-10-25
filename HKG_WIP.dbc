@@ -1481,6 +1481,7 @@ BO_ 1107 453: 8 XXX
 BO_ 1173 495: 8 XXX
 
 BO_ 1042 412: 8 XXX
+ SG_ Park_bttn_react_State : 44|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 1155 483: 8 XXX
 
@@ -2218,6 +2219,7 @@ BO_ 882 Trans_Gear2: 8 XXX
 BO_ 881 Trans_Gear1: 8 XXX
  SG_ Gear_Change : 12|1@0+ (1,0) [0|31] "" XXX
  SG_ VS : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ Brake_press_React : 7|8@0+ (1,0) [0|127] "" XXX
 
 BO_ 1448 5a8: 8 XXX
 
@@ -2350,6 +2352,8 @@ BO_ 1283 503: 8 XXX
 BO_ 1284 504: 8 XXX
 
 BO_ 1343 NEW_MSG_1: 8 XXX
+
+BO_ 1507 BSD_Reactive: 8 XXX
 
 
 
