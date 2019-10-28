@@ -2191,8 +2191,8 @@ BO_ 905 SCC14: 8 SCC
  SG_ JerkLowerLimit : 19|7@1+ (0.1,0) [0|12.7] "m/s^3" ESC
  SG_ SCCMode : 32|3@1+ (1,0) [0|7] "" ESC
  SG_ ColRiskF : 56|3@1+ (1,0) [0|3] "" XXX
- SG_ ComfortBandLower : 6|6@1+ (0.0989,-4.15) [0|1.26] "m/s^2" ESC
- SG_ ComfortBandUpper : 0|6@1+ (0.0989,-4.15) [0|1.26] "m/s^2" ESC
+ SG_ ComfortBandUpper : 0|6@1+ (0.0986,-4.14) [0|1.26] "m/s^2" ESC
+ SG_ ComfortBandLower : 6|6@1+ (0.0986,-4.14) [0|1.26] "m/s^2" ESC
 
 BO_ 909 FCA11: 8 FCA
  SG_ CF_VSM_Prefill : 0|1@1+ (1,0) [0|1] "" ESC
