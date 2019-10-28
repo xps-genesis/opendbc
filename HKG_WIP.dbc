@@ -2187,12 +2187,12 @@ BO_ 1487 5cf: 8 XXX
  SG_ NEW_SIGNAL_1 : 7|16@0+ (1,0) [0|65535] "" XXX
 
 BO_ 905 SCC14: 8 SCC
- SG_ ComfortBandUpper : 0|6@1+ (0.02,0) [0|1.26] "m/s^2" ESC
- SG_ ComfortBandLower : 6|6@1+ (0.02,0) [0|1.26] "m/s^2" ESC
  SG_ JerkUpperLimit : 12|7@1+ (0.1,0) [0|12.7] "m/s^3" ESC
  SG_ JerkLowerLimit : 19|7@1+ (0.1,0) [0|12.7] "m/s^3" ESC
  SG_ SCCMode : 32|3@1+ (1,0) [0|7] "" ESC
- SG_ Paint_1 : 56|3@1+ (1,0) [0|3] "" XXX
+ SG_ ComfortBandUpper : 0|6@1+ (0.02,0) [0|1.26] "m/s^2" ESC
+ SG_ ComfortBandLower : 6|6@1+ (0.02,0) [0|1.26] "m/s^2" ESC
+ SG_ ColRiskF : 56|3@1+ (1,0) [0|3] "" XXX
 
 BO_ 909 FCA11: 8 FCA
  SG_ CF_VSM_Prefill : 0|1@1+ (1,0) [0|1] "" ESC
