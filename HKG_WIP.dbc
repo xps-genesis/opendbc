@@ -1170,7 +1170,6 @@ BO_ 1057 SCC12: 8 SCC
  SG_ CR_VSM_DecCmd : 16|8@1+ (0.01,0) [0|2.55] "g" ESC
  SG_ TakeOverReq : 35|1@1+ (1,0) [0|1] "" CLU,ESC,TCU
  SG_ PreFill : 36|1@1+ (1,0) [0|1] "" ESC,TCU
- SG_ aReqMin : 37|11@1+ (0.01,-10.23) [-10.23|10.24] "m/s^2" EMS,ESC,TCU
  SG_ CF_VSM_ConfMode : 48|2@1+ (1,0) [0|3] "" CLU,ESC
  SG_ AEB_Failinfo : 50|2@1+ (1,0) [0|3] "" CLU,ESC
  SG_ AEB_Status : 52|2@1+ (1,0) [0|3] "" CLU,ESC
@@ -1179,6 +1178,7 @@ BO_ 1057 SCC12: 8 SCC
  SG_ CR_VSM_Alive : 56|4@1+ (1,0) [0|15] "" ESC,PSB
  SG_ CR_VSM_ChkSum : 60|4@1+ (1,0) [0|15] "" ESC,PSB
  SG_ aReqMax : 24|11@1+ (0.01,-10.23) [-10.23|10.24] "m/s^2" EMS,ESC,TCU
+ SG_ aReqMin : 37|11@1+ (0.01,-10.23) [-10.23|10.24] "m/s^2" EMS,ESC,TCU
 
 BO_ 1313 GW_DDM_PE: 8 BCM
  SG_ C_DRVDoorStatus : 0|2@1+ (1,0) [0|3] "" CLU
@@ -1450,18 +1450,16 @@ BO_ 1136 470: 8 XXX
  SG_ Counter : 61|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 304 YRS11: 8 XXX
- SG_ Counter : 51|4@0+ (1,0) [0|4095] "" XXX
- SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
- SG_ PAINT1 : 7|8@0+ (1,0) [0|255] "" XXX
- SG_ PAINT2 : 15|8@0+ (1,0) [0|255] "" XXX
- SG_ PAINT3 : 23|8@0+ (1,0) [0|255] "" XXX
- SG_ PAINT4 : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ CR_Yrs_Chksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ CR_Yrs_MsgCnt : 51|4@0+ (1,0) [0|4095] "" XXX
+ SG_ CR_Yrs_Yr : 0|16@1+ (0.005,-163.84) [0|65535] "" XXX
+ SG_ CF_Yrs_SnsStat : 16|16@1+ (1,0) [0|65535] "" XXX
 
 BO_ 320 YRS12: 8 XXX
- SG_ Counter : 48|4@1+ (1,0) [0|15] "" XXX
- SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ PAINT1 : 7|8@0+ (1,0) [0|255] "" XXX
  SG_ PAINT2 : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ CR_Yrs_Chksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ CR_Yrs_MsgCnt : 48|4@1+ (1,0) [0|15] "" XXX
 
 BO_ 870 366_EMS: 8 EMS
  SG_ EMS_Related : 23|16@0+ (1,0) [0|65535] "" XXX
@@ -2191,8 +2189,8 @@ BO_ 905 SCC14: 8 SCC
  SG_ JerkLowerLimit : 19|7@1+ (0.1,0) [0|12.7] "m/s^3" ESC
  SG_ SCCMode : 32|3@1+ (1,0) [0|7] "" ESC
  SG_ ColRiskF : 56|3@1+ (1,0) [0|3] "" XXX
- SG_ ComfortBandUpper : 0|6@1+ (0.0986,-4.14) [0|1.26] "m/s^2" ESC
  SG_ ComfortBandLower : 6|6@1+ (0.0986,-4.14) [0|1.26] "m/s^2" ESC
+ SG_ ComfortBandUpper : 0|6@1+ (0.0986,-4.14) [0|1.26] "m/s^2" ESC
 
 BO_ 909 FCA11: 8 FCA
  SG_ CF_VSM_Prefill : 0|1@1+ (1,0) [0|1] "" ESC
