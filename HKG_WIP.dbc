@@ -1449,7 +1449,7 @@ BO_ 1162 48a: 8 XXX
 BO_ 1136 470: 8 XXX
  SG_ Counter : 61|4@0+ (1,0) [0|15] "" XXX
 
-BO_ 304 130: 8 XXX
+BO_ 304 YRS11: 8 XXX
  SG_ Counter : 51|4@0+ (1,0) [0|4095] "" XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ PAINT1 : 7|8@0+ (1,0) [0|255] "" XXX
@@ -1457,7 +1457,7 @@ BO_ 304 130: 8 XXX
  SG_ PAINT3 : 23|8@0+ (1,0) [0|255] "" XXX
  SG_ PAINT4 : 31|8@0+ (1,0) [0|255] "" XXX
 
-BO_ 320 140: 8 XXX
+BO_ 320 YRS12: 8 XXX
  SG_ Counter : 48|4@1+ (1,0) [0|15] "" XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ PAINT1 : 7|8@0+ (1,0) [0|255] "" XXX
