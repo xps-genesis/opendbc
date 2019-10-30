@@ -1446,7 +1446,7 @@ BO_ 1162 48a: 8 XXX
  SG_ PAINT1 : 33|1@0+ (1,0) [0|1] "" XXX
  SG_ PAINT2 : 16|1@0+ (1,0) [0|1] "" XXX
 
-BO_ 1136 470: 8 XXX
+BO_ 1136 Brake_OR_Power2: 8 XXX
  SG_ Counter : 61|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 304 YRS11: 8 XXX
@@ -2355,6 +2355,8 @@ BO_ 1284 504: 8 XXX
 BO_ 1343 NEW_MSG_1: 8 XXX
 
 BO_ 1507 BSD_Reactive: 8 XXX
+
+BO_ 352 Brake_OR_Power1: 8 XXX
 
 
 
