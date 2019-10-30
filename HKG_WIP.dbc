@@ -2214,6 +2214,8 @@ BO_ 1157 LFAHDA_MFC: 8 XXX
 BO_ 882 Trans_Gear2: 8 XXX
  SG_ Gear_Stat : 23|8@0+ (1,0) [0|255] "" XXX
  SG_ VS : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_2 : 33|12@1- (1,0) [0|31] "" XXX
+ SG_ NEW_SIGNAL_1 : 56|8@1+ (1,0) [0|255] "" XXX
 
 BO_ 881 Trans_Gear1: 8 XXX
  SG_ VS : 39|8@0+ (1,0) [0|255] "" XXX
