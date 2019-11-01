@@ -2107,12 +2107,12 @@ BO_ 1886 75eLCAN_0120: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1537 R_OptData_601: 8 XXX
- SG_ Radar_Obj2 : 43|9@1+ (1,0.5) [0|7] "" XXX
  SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
- SG_ Radar_Obj : 11|9@1- (0.5,0) [0|7] "" XXX
  SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
  SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
  SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_Obj : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_Obj2 : 42|10@1- (1,0.5) [0|7] "" XXX
 
 BO_ 1904 V_Stat: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
