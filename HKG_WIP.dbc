@@ -2372,6 +2372,9 @@ BO_ 1555 R_OptData_PT_613_A1: 8 XXX
 BO_ 1556 R_OptData_PTS_614_A2: 8 XXX
  SG_ Counter : 63|4@0+ (1,0) [0|7] "" XXX
  SG_ Active_Target : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ VehRea1 : 19|1@0+ (1,0) [0|1] "" XXX
+ SG_ VehRea2 : 12|1@0+ (1,0) [0|1] "" XXX
+ SG_ VehRea3 : 10|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 1557 R_OptData_PT_615_B1: 8 XXX
  SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [0|3] "" XXX
