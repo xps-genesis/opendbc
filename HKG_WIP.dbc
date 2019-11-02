@@ -2362,41 +2362,43 @@ BO_ 1507 BSD_Reactive: 8 XXX
 
 BO_ 352 Brake_OR_Power1: 8 XXX
 
-BO_ 1555 R_OptData_PT_613: 8 XXX
+BO_ 1555 R_OptData_PT_613_A1: 8 XXX
  SG_ Radar_Obj : 10|10@1- (0.5,0) [0|3] "" XXX
  SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [0|3] "" XXX
  SG_ Checksum : 60|4@1+ (1,0) [0|3] "" XXX
  SG_ Counter : 56|4@1+ (1,0) [0|3] "" XXX
  SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [0|3] "" XXX
 
-BO_ 1556 R_OptData_PTS_614: 8 XXX
+BO_ 1556 R_OptData_PTS_614_A2: 8 XXX
+ SG_ Counter : 63|4@0+ (1,0) [0|7] "" XXX
+ SG_ Target : 0|1@0+ (1,0) [0|1] "" XXX
 
-BO_ 1557 R_OptData_PT_615: 8 XXX
+BO_ 1557 R_OptData_PT_615_B1: 8 XXX
  SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [0|3] "" XXX
  SG_ Radar_Obj : 10|10@1- (0.5,0) [0|3] "" XXX
  SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [0|3] "" XXX
  SG_ Checksum : 60|4@1+ (1,0) [0|3] "" XXX
  SG_ Counter : 56|4@1+ (1,0) [0|3] "" XXX
 
-BO_ 1559 R_OptData_PT_617: 8 XXX
+BO_ 1559 R_OptData_PT_617_C1: 8 XXX
  SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [0|3] "" XXX
  SG_ Radar_Obj : 10|10@1- (0.5,0) [0|3] "" XXX
  SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [0|3] "" XXX
  SG_ Checksum : 60|4@1+ (1,0) [0|3] "" XXX
  SG_ Counter : 56|4@1+ (1,0) [0|3] "" XXX
 
-BO_ 1561 R_OptData_PT_619: 8 XXX
+BO_ 1561 R_OptData_PT_619_D1: 8 XXX
  SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [0|3] "" XXX
  SG_ Radar_Obj : 10|10@1- (0.5,0) [0|3] "" XXX
  SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [0|3] "" XXX
  SG_ Checksum : 60|4@1+ (1,0) [0|3] "" XXX
  SG_ Counter : 56|4@1+ (1,0) [0|3] "" XXX
 
-BO_ 1558 R_OptData_PTS_616: 8 XXX
+BO_ 1558 R_OptData_PTS_616_B2: 8 XXX
 
-BO_ 1560 R_OptData_PTS_618: 8 XXX
+BO_ 1560 R_OptData_PTS_618_C2: 8 XXX
 
-BO_ 1562 R_OptData_PTS_61a: 8 XXX
+BO_ 1562 R_OptData_PTS_61a_D2: 8 XXX
 
 
 
