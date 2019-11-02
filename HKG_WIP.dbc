@@ -1667,7 +1667,7 @@ BO_ 2016 7e0: 8 XXX
 BO_ 2024 7e8: 8 XXX
 
 BO_ 1554 R_Stat: 8 XXX
- SG_ Master_Counter : 15|16@0+ (1,0) [0|65535] "" XXX
+ SG_ Master_Counter : 8|24@1+ (1,0) [0|65535] "" XXX
 
 BO_ 1848 738LCAN: 8 XXX
  SG_ Counter1 : 55|4@0+ (1,0) [0|15] "" XXX
@@ -2399,6 +2399,10 @@ BO_ 1558 R_OptData_PTS_616_B2: 8 XXX
 BO_ 1560 R_OptData_PTS_618_C2: 8 XXX
 
 BO_ 1562 R_OptData_PTS_61a_D2: 8 XXX
+
+BO_ 1905 771LCAN: 8 XXX
+
+BO_ 1906 772LCAN: 8 XXX
 
 
 
