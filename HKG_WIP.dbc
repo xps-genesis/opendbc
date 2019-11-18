@@ -2212,10 +2212,11 @@ BO_ 1157 LFAHDA_MFC: 8 XXX
  SG_ HDA_USM : 0|2@1+ (1,0) [0|3] "" XXX
 
 BO_ 882 E_EMS12: 8 XXX
- SG_ Gear_Stat : 23|8@0+ (1,0) [0|255] "" XXX
  SG_ VS : 7|8@0+ (1,0) [0|255] "" XXX
  SG_ NEW_SIGNAL_2 : 33|12@1- (1,0) [0|31] "" XXX
  SG_ NEW_SIGNAL_1 : 56|8@1+ (1,0) [0|255] "" XXX
+ SG_ Gear_Stat : 16|3@1+ (1,0) [0|255] "" XXX
+ SG_ Regen_Lvl : 21|2@0+ (1,0) [0|15] "" XXX
 
 BO_ 881 E_EMS11: 8 XXX
  SG_ VS : 39|8@0+ (1,0) [0|255] "" XXX
