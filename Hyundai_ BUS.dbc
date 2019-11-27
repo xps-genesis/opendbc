@@ -38,6 +38,9 @@ BU_: XXX
 
 BO_ 418384139 SAS: 8 XXX
  SG_ SAS_Angle : 0|16@1+ (1,0) [-3276.8|3276.7] "Deg" XXX
+ SG_ NEW_SIGNAL_3 : 56|8@1+ (1,0) [0|255] "" XXX
+ SG_ Yaw_Rate : 24|16@1+ (0.01,0) [0|63] "" XXX
+ SG_ NEW_SIGNAL_2 : 40|16@1+ (0.01,0) [0|255] "" XXX
 
 BO_ 218095872 POSEMS: 8 XXX
  SG_ NEW_SIGNAL_1 : 8|16@1+ (1,0) [0|7] "" XXX
