@@ -36,10 +36,27 @@ BS_:
 BU_: XXX
 
 
-BO_ 2 NEW_MSG_1: 8 XXX
+BO_ 2 M_1: 8 XXX
  SG_ Counter : 0|4@1+ (1,0) [0|15] "" XXX
  SG_ Master_Counter : 32|24@1+ (1,0) [0|16777215] "" XXX
 
-BO_ 4 NEW_MSG_2: 8 XXX
+BO_ 4 M_2: 8 XXX
  SG_ Counter : 0|4@1+ (1,0) [0|15] "" XXX
+ SG_ Master_Counter : 32|24@1+ (1,0) [0|16777215] "" XXX
+
+BO_ 1037 NEW_MSG_3: 8 XXX
+ SG_ TEST_SIG : 36|12@1+ (1,0) [0|63] "" XXX
+
+BO_ 1043 NEW_MSG_4: 8 XXX
+ SG_ NEW_SIGNAL_1 : 16|16@1+ (1,0) [0|65535] "" XXX
+
+BO_ 1035 NEW_MSG_5: 8 XXX
+ SG_ NEW_SIGNAL_1 : 0|7@1+ (1,0) [0|65535] "" XXX
+
+BO_ 18 M_3: 8 XXX
+ SG_ Master_Counter : 32|24@1+ (1,0) [0|16777215] "" XXX
+ SG_ Counter : 16|4@1+ (1,0) [0|63] "" XXX
+
+BO_ 20 M_4: 8 XXX
+ SG_ Counter : 16|4@1+ (1,0) [0|15] "" XXX
  SG_ Master_Counter : 39|24@0+ (1,0) [0|16777215] "" XXX
