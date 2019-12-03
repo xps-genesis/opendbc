@@ -449,7 +449,7 @@ BO_ 897 MDPS11: 8 MDPS
  SG_ CF_Mdps_CurrMode : 59|2@1+ (1,0) [0|3] "" LDWS_LKAS
  SG_ CF_Mdps_Type : 61|2@1+ (1,0) [0|2] "" LDWS_LKAS,SPAS
  SG_ CF_MDPS_VSM_FUNC : 56|1@0+ (1,0) [0|1] "" XXX
- SG_ CR_Mdps_DrvTq : 11|12@1+ (1,-2048) [-2048|2046] "" SPAS
+ SG_ CR_Mdps_DrvTq : 11|12@1+ (0.0078125,-2048) [-2048|2046] "" SPAS
 
 BO_ 896 DI_BOX13: 8 DI_BOX
  SG_ CF_DiBox_HPreInjVConfStat : 0|8@1+ (1,0) [0|255] "" EMS
@@ -791,7 +791,6 @@ BO_ 1362 SNV11: 4 SNV
  SG_ CF_Snv_IRLampControl : 10|2@1+ (1,0) [0|3] "" BCM,CLU,HUD
 
 BO_ 593 MDPS12: 8 MDPS
- SG_ CR_Mdps_StrColTq : 0|11@1+ (0.0078125,-8) [-8|7.9921875] "Nm" LDWS_LKAS
  SG_ CF_Mdps_Def : 11|1@1+ (1,0) [0|1] "" ESC
  SG_ CF_Mdps_ToiUnavail : 12|1@1+ (1,0) [0|1] "" LDWS_LKAS
  SG_ CF_Mdps_ToiActive : 13|1@1+ (1,0) [0|1] "" LDWS_LKAS
@@ -802,6 +801,7 @@ BO_ 593 MDPS12: 8 MDPS
  SG_ CF_Mdps_SErr : 37|1@1+ (1,0) [0|1] "" ESC
  SG_ CR_Mdps_StrTq : 40|12@1+ (0.01,-20.48) [-20.48|20.47] "Nm" ESC
  SG_ CR_Mdps_OutTq : 52|12@1+ (0.1,-204.8) [-204.8|204.7] "" ESC,LDWS_LKAS
+ SG_ CR_Mdps_StrColTq : 0|11@1+ (0.0078125,-8) [-8|7.9921875] "Nm" LDWS_LKAS
 
 BO_ 1360 IAP11: 3 IAP
  SG_ CF_Iap_EcoPmodSwi : 0|1@1+ (1,0) [0|1] "" CLU
