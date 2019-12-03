@@ -60,3 +60,16 @@ BO_ 18 M_3: 8 XXX
 BO_ 20 M_4: 8 XXX
  SG_ Counter : 16|4@1+ (1,0) [0|15] "" XXX
  SG_ Master_Counter : 39|24@0+ (1,0) [0|16777215] "" XXX
+
+BO_ 769 301: 8 XXX
+ SG_ Counter : 0|4@1+ (1,0) [0|7] "" XXX
+
+BO_ 1010 3F2: 8 XXX
+ SG_ Counter : 0|4@1+ (1,0) [0|15] "" XXX
+ SG_ Master_Counter : 32|24@1+ (1,0) [0|16777215] "" XXX
+
+BO_ 1024 NEW_MSG_1: 8 XXX
+ SG_ Counter : 63|5@0+ (1,0) [0|31] "" XXX
+ SG_ Master_Counter : 32|24@1+ (1,0) [0|65535] "" XXX
+ SG_ Unknown_Flag : 0|1@1+ (1,0) [0|31] "" XXX
+ SG_ Unknown_Signal : 30|5@0+ (1,0) [0|31] "" XXX
