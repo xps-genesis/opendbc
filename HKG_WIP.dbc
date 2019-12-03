@@ -440,7 +440,6 @@ BO_ 897 MDPS11: 8 MDPS
  SG_ CF_Mdps_Flex : 2|3@1+ (1,0) [0|3] "" CLU,LDWS_LKAS
  SG_ CF_Mdps_FlexDisp : 5|1@1+ (1,0) [0|1] "" CLU
  SG_ CF_Mdps_Stat : 7|4@1+ (1,0) [0|15] "" SPAS
- SG_ CR_Mdps_DrvTq : 11|12@1+ (1,-2048) [-2048|2046] "" SPAS
  SG_ CF_Mdps_ALTRequest : 23|1@1+ (1,0) [0|1] "" EMS
  SG_ CR_Mdps_StrAng : 24|16@1- (0.1,0) [-3276.8|3276.7] "Deg" SPAS
  SG_ CF_Mdps_AliveCnt : 40|8@1+ (1,0) [0|255] "" LDWS_LKAS,SPAS
@@ -450,6 +449,7 @@ BO_ 897 MDPS11: 8 MDPS
  SG_ CF_Mdps_CurrMode : 59|2@1+ (1,0) [0|3] "" LDWS_LKAS
  SG_ CF_Mdps_Type : 61|2@1+ (1,0) [0|2] "" LDWS_LKAS,SPAS
  SG_ CF_MDPS_VSM_FUNC : 56|1@0+ (1,0) [0|1] "" XXX
+ SG_ CR_Mdps_DrvTq : 11|12@1+ (1,-2048) [-2048|2046] "" SPAS
 
 BO_ 896 DI_BOX13: 8 DI_BOX
  SG_ CF_DiBox_HPreInjVConfStat : 0|8@1+ (1,0) [0|255] "" EMS
@@ -977,11 +977,11 @@ BO_ 832 LKAS11: 8 LDWS_LKAS
  SG_ CF_Lkas_LdwsRHWarning : 12|2@1+ (1,0) [0|3] "" BCM,CLU,PSB
  SG_ CF_Lkas_HbaLamp : 14|1@1+ (1,0) [0|1] "" CLU
  SG_ CF_Lkas_FcwBasReq : 15|1@1+ (1,0) [0|1] "" ABS,ESC
- SG_ CR_Lkas_StrToqReq : 16|11@1+ (1,-1024) [-1024|1024] "" MDPS
  SG_ CF_Lkas_ActToi : 27|1@1+ (1,0) [0|1] "" MDPS
  SG_ CF_Lkas_ToiFlt : 28|1@1+ (1,0) [0|1] "" MDPS
  SG_ CF_Lkas_HbaSysState : 29|3@1+ (1,0) [0|7] "" BCM,CLU
  SG_ CF_Lkas_LdwsOpt_USM : 59|3@1+ (1,0) [0|7] "" CLU,MDPS
+ SG_ CR_Lkas_StrToqReq : 16|11@1+ (1,-1024) [-1024|1024] "" MDPS
 
 BO_ 1342 LKAS12: 6 LDWS_LKAS
  SG_ CF_Lkas_TsrSlifOpt : 10|2@1+ (1,0) [0|3] "" CLU
@@ -2212,11 +2212,11 @@ BO_ 1157 LFAHDA_MFC: 8 XXX
  SG_ HDA_USM : 0|2@1+ (1,0) [0|3] "" XXX
 
 BO_ 882 E_EMS12: 8 XXX
- SG_ VS : 7|8@0+ (1,0) [0|255] "" XXX
  SG_ NEW_SIGNAL_2 : 33|12@1- (1,0) [0|31] "" XXX
  SG_ NEW_SIGNAL_1 : 56|8@1+ (1,0) [0|255] "" XXX
  SG_ Gear_Stat : 16|3@1+ (1,0) [0|255] "" XXX
  SG_ Regen_Lvl : 21|2@0+ (1,0) [0|15] "" XXX
+ SG_ VS : 0|8@1+ (1,0) [0|255] "" XXX
 
 BO_ 881 E_EMS11: 8 XXX
  SG_ VS : 39|8@0+ (1,0) [0|255] "" XXX
