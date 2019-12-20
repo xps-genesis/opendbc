@@ -970,7 +970,6 @@ BO_ 832 LKAS11: 8 LDWS_LKAS
  SG_ CF_Lkas_FcwOpt_USM : 56|3@1+ (1,0) [0|7] "" CLU
  SG_ PAINT1 : 47|1@1+ (1,0) [0|3] "" XXX
  SG_ PAINT2 : 63|2@0+ (1,0) [0|3] "" XXX
- SG_ CF_Lkas_Bca_R : 0|2@1+ (1,0) [0|3] "" CLU,IBOX,PSB
  SG_ CF_Lkas_LdwsSysState : 2|4@1+ (1,0) [0|15] "" CLU,IBOX,PSB
  SG_ CF_Lkas_SysWarning : 6|4@1+ (1,0) [0|15] "" BCM,CLU
  SG_ CF_Lkas_LdwsLHWarning : 10|2@1+ (1,0) [0|3] "" BCM,CLU,PSB
@@ -982,6 +981,7 @@ BO_ 832 LKAS11: 8 LDWS_LKAS
  SG_ CF_Lkas_HbaSysState : 29|3@1+ (1,0) [0|7] "" BCM,CLU
  SG_ CF_Lkas_LdwsOpt_USM : 59|3@1+ (1,0) [0|7] "" CLU,MDPS
  SG_ CR_Lkas_StrToqReq : 16|11@1+ (1,-1024) [-1024|1024] "" MDPS
+ SG_ CF_Lkas_LdwsActivemode : 0|2@1+ (1,0) [0|3] "" CLU,IBOX,PSB
 
 BO_ 1342 LKAS12: 6 LDWS_LKAS
  SG_ CF_Lkas_TsrSlifOpt : 10|2@1+ (1,0) [0|3] "" CLU
