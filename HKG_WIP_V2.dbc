@@ -1469,14 +1469,14 @@ BO_ 304 YRS11: 8 ACU
  SG_ CR_Yrs_Crc1 : 56|8@1+ (1,0) [0|255] "" iBAU
 
 BO_ 320 YRS12: 8 ACU
- SG_ CR_Yrs_LongAc : 0|16@1+ (0.000127465,-4.17677312) [-4.17677312|4.17651819] "g" CGW,iBAU
  SG_ CF_Yrs_LongAcStat : 16|4@1+ (1,0) [0|15] "" iBAU
  SG_ CF_IMU_ResetStat : 20|4@1+ (1,0) [0|15] "" iBAU
- SG_ YRS_Temp : 24|8@1+ (1,-68) [-68|187] "℃" iBAU
  SG_ YRS_TempStat : 32|4@1+ (1,0) [0|15] "" iBAU
  SG_ CF_Yrs_Type : 36|4@1+ (1,0) [0|15] "" iBAU
  SG_ CR_Yrs_MsgCnt2 : 48|4@1+ (1,0) [0|15] "" iBAU
  SG_ CR_Yrs_Crc2 : 56|8@1+ (1,0) [0|255] "" iBAU
+ SG_ YRS_Temp : 24|8@1+ (1,-68) [-68|187] "℃" iBAU
+ SG_ CR_Yrs_LongAc : 0|16@1+ (0.000127465,-4.17677312) [-4.17677312|4.17651819] "g" CGW,iBAU
 
 BO_ 1173 YRS13: 8 ACU
  SG_ YRS_SeralNo : 16|48@1+ (1,0) [0|281474976710655] "" iBAU
@@ -1535,14 +1535,16 @@ BO_ 513 201LCAN_StatInfo: 8 XXX
 
 BO_ 514 202LCAN_StatInfo: 8 XXX
  SG_ Alive_Counter : 7|2@0+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_1 : 48|16@1- (1,0) [0|65535] "" XXX
 
-BO_ 515 203LCAN_StatInfo: 8 XXX
+BO_ 515 203LCAN_StatCounter: 8 XXX
  SG_ Counter_2 : 40|16@1+ (1,0) [0|3] "" XXX
  SG_ Checksum_2 : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Checksum : 31|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 8|16@1+ (1,0) [0|255] "" XXX
 
 BO_ 516 204LCAN_StatInfo: 8 XXX
+ SG_ NEW_SIGNAL_1 : 32|8@1+ (1,0) [0|2047] "" XXX
 
 BO_ 517 205LCAN_StatInfo: 8 XXX
 
@@ -1599,6 +1601,8 @@ BO_ 575 23fLCAN_V: 8 XXX
 BO_ 576 240LCAN_V: 8 XXX
  SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_2 : 16|3@1- (1,0) [0|3] "" XXX
+ SG_ Distance : 20|12@1+ (1,-1024.00) [0|3] "" XXX
 
 BO_ 577 241LCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
