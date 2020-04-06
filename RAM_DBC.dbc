@@ -41,3 +41,6 @@ BO_ 166 LKA_A6: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Act_Stat : 25|1@0+ (1,0) [0|1] "" XXX
  SG_ LKA_Torq_Req : 10|11@0+ (1,-1024) [0|7] "" XXX
+
+BO_ 163 NEW_MSG_1: 8 XXX
+ SG_ NEW_SIGNAL_1 : 30|7@0+ (1,0) [0|127] "" XXX
