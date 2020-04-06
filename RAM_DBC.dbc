@@ -46,6 +46,31 @@ BO_ 163 NEW_MSG_1: 8 XXX
  SG_ NEW_SIGNAL_1 : 30|7@0+ (1,0) [0|127] "" XXX
 
 BO_ 127 NEW_MSG_2: 8 XXX
+ SG_ NEW_SIGNAL_4 : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_3 : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_2 : 23|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_1 : 31|8@0+ (1,0) [0|255] "" XXX
 
-BO_ 121 Dyna: 8 XXX
+BO_ 121 VS_79: 8 XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ VS : 39|16@0+ (1,0) [0|255] "" XXX
+ SG_ UNKNOWN1 : 2|11@0+ (1,0) [0|255] "" XXX
+ SG_ UNKNOWN2 : 18|13@0+ (1,0) [0|65535] "" XXX
+ SG_ Stationary_FLAG : 7|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 35 NEW_MSG_3: 8 XXX
+ SG_ NEW_SIGNAL_1 : 23|16@0+ (1,0) [0|65535] "" XXX
+
+BO_ 43 NEW_MSG_4: 8 XXX
+
+BO_ 754 NEW_MSG_5: 8 XXX
+
+BO_ 221 NEW_MSG_6: 8 XXX
+ SG_ NEW_SIGNAL_1 : 7|16@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_2 : 23|16@0+ (1,0) [0|255] "" XXX
+
+BO_ 135 NEW_MSG_7: 8 XXX
+
+BO_ 129 NEW_MSG_8: 8 XXX
+ SG_ NEW_SIGNAL_1 : 23|8@0+ (1,0) [0|255] "" XXX
