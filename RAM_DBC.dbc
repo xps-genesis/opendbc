@@ -36,7 +36,7 @@ BS_:
 BU_: XXX
 
 
-BO_ 166 LKA_A6: 8 XXX
+BO_ 166 MFC_A6: 8 XXX
  SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Act_Stat : 25|1@0+ (1,0) [0|1] "" XXX
@@ -49,3 +49,13 @@ BO_ 121 VS_79: 8 XXX
  SG_ UNKNOWN1 : 2|11@0+ (1,0) [0|255] "" XXX
  SG_ UNKNOWN2 : 18|13@0+ (1,0) [0|65535] "" XXX
  SG_ Stationary_FLAG : 7|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 153 MFC_99: 8 XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|3] "" XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|3] "" XXX
+
+BO_ 163 MFC_A3: 8 XXX
+
+BO_ 232 MFC_E8: 8 XXX
+
+BO_ 250 MFC_FA: 8 XXX
