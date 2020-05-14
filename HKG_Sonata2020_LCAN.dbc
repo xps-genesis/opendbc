@@ -1,0 +1,770 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BU_: XXX CLU EMS ESC TCU ABS MFC
+
+
+BO_ 1056 SCC11: 8 SCC
+ SG_ MainMode_ACC : 0|1@1+ (1,0) [0|1] "" CLU,EMS,ESC
+ SG_ SCCInfoDisplay : 1|3@1+ (1,0) [0|7] "" CLU,ESC
+ SG_ AliveCounterACC : 4|4@1+ (1,0) [0|15] "" CLU,EMS,ESC,TCU
+ SG_ VSetDis : 8|8@1+ (1,0) [0|255] "km/h or MPH" CLU,ESC,TCU
+ SG_ ObjValid : 16|1@1+ (1,0) [0|1] "" CLU,ESC,TCU
+ SG_ DriverAlertDisplay : 17|2@1+ (1,0) [0|3] "" CLU,ESC
+ SG_ TauGapSet : 19|3@1+ (1,0) [0|7] "" CLU,ESC,TCU
+ SG_ Navi_SCC_Curve_Status : 56|2@1+ (1,0) [0|3] "" CLU
+ SG_ Navi_SCC_Curve_Act : 58|2@1+ (1,0) [0|3] "" CLU
+ SG_ Navi_SCC_Camera_Act : 60|2@1+ (1,0) [0|3] "" CLU
+ SG_ Navi_SCC_Camera_Status : 62|2@1+ (1,0) [0|3] "" CLU
+ SG_ ACC_ObjStatus : 22|2@1+ (1,0) [0|3] "" ABS,ESC
+ SG_ ACC_ObjLatPos : 24|9@1+ (0.1,-20) [-20|31.1] "m" ABS,ESC
+ SG_ ACC_ObjRelSpd : 44|12@1+ (0.1,-170) [-170|239.5] "m/s" ABS,ESC
+ SG_ ACC_ObjDist : 33|11@1+ (0.1,0) [0|204.7] "m" ABS,ESC
+
+BO_ 513 201LCAN_StatInfo: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 514 202LCAN_StatInfo: 8 XXX
+ SG_ Alive_Counter : 7|2@0+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_1 : 48|16@1- (1,0) [0|65535] "" XXX
+ SG_ NEW_SIGNAL_2 : 31|24@0+ (1,0) [0|16777215] "" XXX
+
+BO_ 515 203LCAN_StatCounter: 8 XXX
+ SG_ Counter_2 : 40|16@1+ (1,0) [0|3] "" XXX
+ SG_ Checksum_2 : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Checksum : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 8|16@1+ (1,0) [0|255] "" XXX
+
+BO_ 516 204LCAN_StatInfo: 8 XXX
+ SG_ NEW_SIGNAL_1 : 32|8@1+ (1,0) [0|2047] "" XXX
+
+BO_ 517 205LCAN_StatInfo: 8 XXX
+
+BO_ 522 20aLCAN_StatInfo: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 523 20bLCAN_StatInfo: 8 XXX
+ SG_ Counter1 : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter2 : 63|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 524 20cLCAN_StatInfo: 8 XXX
+
+BO_ 623 26fLCAN_R: 8 XXX
+
+BO_ 622 26eLCAN_R: 8 XXX
+
+BO_ 621 26dLCAN_R: 8 XXX
+ SG_ Alive_Counter : 16|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 618 26aLCAN_R: 8 XXX
+
+BO_ 568 238LCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_1 : 24|8@1- (0.1,0) [-20|31.1] "m" XXX
+
+BO_ 569 239LCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_1 : 3|8@1- (0.1,0) [-20|31.1] "" XXX
+ SG_ NEW_SIGNAL_2 : 24|8@1- (0.1,0) [0|255] "" XXX
+
+BO_ 570 23aLCAN_V: 8 XXX
+ SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_1 : 24|8@1- (0.1,0) [0|255] "" XXX
+
+BO_ 571 23bLCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_1 : 2|11@1+ (0.01,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_2 : 24|8@1- (0.1,0) [0|3] "" XXX
+
+BO_ 572 23cLCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_1 : 24|8@1- (0.1,0) [0|255] "" XXX
+
+BO_ 573 23dLCAN_V: 8 XXX
+ SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 574 23eLCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 575 23fLCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 576 240LCAN_V: 8 XXX
+ SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+ SG_ NEW_SIGNAL_2 : 16|3@1- (1,0) [0|3] "" XXX
+ SG_ Distance : 20|12@1+ (1,-1024) [0|3] "" XXX
+
+BO_ 577 241LCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 617 269LCAN_R: 8 XXX
+ SG_ NEW_SIGNAL_1 : 0|16@1+ (0.1,0) [0|3] "" XXX
+
+BO_ 578 242LCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 579 243LCAN_V: 8 XXX
+ SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 580 244LCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 581 245LCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 582 246LCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ Counter : 55|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 583 247LCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 584 248LCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 585 249LCAN_V: 8 XXX
+ SG_ Alive_Counter : 6|2@1+ (1,0) [0|7] "" XXX
+ SG_ Counter : 55|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 586 24aLCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
+
+BO_ 587 24bLCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 588 24cLCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ Counter : 55|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 589 24dLCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 590 24eLCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+
+BO_ 591 24fLCAN_V: 8 XXX
+ SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ Counter : 55|8@0+ (1,0) [0|255] "" XXX
+
+BO_ 614 266LCAN_R: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjDist : 0|8@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 8|12@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+
+BO_ 615 267LCAN_R: 8 XXX
+ SG_ NEW_SIGNAL_1 : 42|10@1+ (1,0) [0|7] "" XXX
+
+BO_ 616 268LCAN_R: 8 XXX
+
+BO_ 1517 5edLCAN: 8 XXX
+ SG_ Counter : 56|4@1+ (1,0) [0|15] "" XXX
+
+BO_ 1518 5eeLCAN: 8 XXX
+ SG_ Counter : 56|4@1+ (1,0) [0|15] "" XXX
+
+BO_ 1519 5efLCAN: 8 XXX
+ SG_ Counter : 56|4@1+ (1,0) [0|15] "" XXX
+
+BO_ 1554 R_Stat: 8 XXX
+ SG_ Master_Counter : 8|24@1+ (1,0) [0|65535] "" XXX
+
+BO_ 1848 738LCAN: 8 XXX
+ SG_ Counter1 : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Checksum : 63|4@0+ (1,0) [0|15] "" XXX
+ SG_ Counter2 : 56|4@1+ (1,0) [0|3] "" XXX
+ SG_ Target_Info : 0|8@1- (1,0) [0|65535] "" XXX
+
+BO_ 1849 V_OptData_739: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+
+BO_ 1850 V_OptData_73a: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+
+BO_ 1851 V_OptData_73b: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+
+BO_ 1852 V_OptData_73c: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1553 R_OptData_611: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1552 R_OptData_610: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1551 R_OptData_60F: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1550 R_OptData_60E: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1549 R_OptData_60D: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1853 V_OptData_73d: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+
+BO_ 1854 V_OptData_73e: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1855 V_OptData_73f: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1856 V_OptData_740: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1857 V_OptData_741: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1858 V_OptData_742: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1859 V_OptData_743: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1860 V_OptData_744: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1861 V_OptData_745: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1862 V_OptData_746: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+
+BO_ 1863 V_OptData_747: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1864 V_OptData_748: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1865 V_OptData_749: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1866 V_OptData_74a: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1867 V_OptData_74b: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1868 V_OptData_74c: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1869 V_OptData_74d: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+
+BO_ 1870 V_OptData_74e: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+
+BO_ 1871 V_OptData_74f: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1872 V_OptData_750: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1873 V_OptData_751: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1874 V_OptData_752: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1548 R_OptData_60C: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1547 R_OptData_60B: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1546 R_OptData_60A: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1545 R_OptData_609: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1544 R_OptData_608: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1543 R_OptData_607: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1542 R_OptData_606: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1541 R_OptData_605: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1540 R_OptData_604: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1539 R_OptData_603: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1538 R_OptData_602: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+
+BO_ 1875 V_OptData_753: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1876 V_OptData_754: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1877 V_OptData_755: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1878 V_OptData_756: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Vision_ObjLatPos : 0|8@1- (0.1,0) [-20|31.1] "m" XXX
+ SG_ Vision_ObjDist_High : 8|12@1+ (0.05,0) [0|3] "m" XXX
+ SG_ Vision_ObjRelSpd : 20|12@1- (0.1,0) [-170|239.5] "m/s" XXX
+ SG_ Vision_ObjDist_Low : 32|8@1+ (1.2,0) [0|3] "m" XXX
+ SG_ Vision_ObjDist_2_High : 40|12@1+ (0.05,0) [0|204.7] "m" XXX
+
+BO_ 1879 757LCAN_0120: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter_Master : 40|8@1+ (1,0) [0|8191] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1880 758LCAN_0120: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1881 759LCAN_0120: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1882 75aLCAN_0120: 8 XXX
+ SG_ CHecksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1883 75bLCAN_0120: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1884 75cLCAN_0120: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1885 75dLCAN_0120: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1886 75eLCAN_0120: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1537 R_OptData_601: 8 XXX
+ SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
+ SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+ SG_ Radar_ObjLat : 10|10@1- (0.5,0) [0|7] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
+
+BO_ 1904 V_Stat: 8 XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Master_Checksum : 7|8@0+ (1,0) [0|127] "" XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Master_Counter : 16|24@1+ (1,0) [0|127] "" XXX
+
+BO_ 1903 76fLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ NEW_SIGNAL_1 : 0|8@1- (0.1,0) [0|7] "" XXX
+
+BO_ 1887 75fLCAN_0120: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1888 760LCAN_0120: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1894 766LCAN_StaticInfo: 8 XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_1 : 24|12@1- (1,0) [0|3] "" XXX
+ SG_ STAT1 : 48|4@1+ (1,0) [0|3] "" XXX
+ SG_ STAT2 : 16|4@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_2 : 0|16@1- (1,0) [0|65535] "" XXX
+
+BO_ 1895 767LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ NEW_SIGNAL_1 : 0|8@1- (0.1,0) [0|7] "m" XXX
+ SG_ NEW_SIGNAL_2 : 32|8@1+ (1.2,0) [0|255] "m" XXX
+
+BO_ 1902 76eLCAN_StaticInfo: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ NEW_SIGNAL_1 : 7|3@0+ (1,0) [0|65535] "" XXX
+
+BO_ 1896 768LCAN_StaticInfo: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ POS_STAT : 7|3@0+ (1,0) [0|7] "" XXX
+
+BO_ 1897 769LCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ NEW_SIGNAL_1 : 0|8@1- (0.1,0) [0|7] "m" XXX
+ SG_ NEW_SIGNAL_2 : 32|8@1+ (1.2,0) [0|15] "" XXX
+
+BO_ 1899 76bLCAN_StaticInfo: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 1900 76cLCAN_StaticInfo: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ POS_STAT : 7|3@0+ (1,0) [0|7] "" XXX
+
+BO_ 1901 76dLCAN: 8 XXX
+ SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
+ SG_ NEW_SIGNAL_1 : 0|8@1- (0.1,0) [0|7] "" XXX
+
+BO_ 1555 R_OptData_PT_613_A1: 8 XXX
+ SG_ Radar_Obj : 10|10@1- (0.5,0) [0|3] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [0|3] "" XXX
+ SG_ Checksum : 60|4@1+ (1,0) [0|3] "" XXX
+ SG_ Counter : 56|4@1+ (1,0) [0|3] "" XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [0|3] "" XXX
+
+BO_ 1556 R_OptData_PTS_614_A2: 8 XXX
+ SG_ Counter : 63|4@0+ (1,0) [0|7] "" XXX
+ SG_ Active_Target : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ VehRea1 : 19|1@0+ (1,0) [0|1] "" XXX
+ SG_ VehRea2 : 12|1@0+ (1,0) [0|1] "" XXX
+ SG_ VehRea3 : 10|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1557 R_OptData_PT_615_B1: 8 XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [0|3] "" XXX
+ SG_ Radar_Obj : 10|10@1- (0.5,0) [0|3] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [0|3] "" XXX
+ SG_ Checksum : 60|4@1+ (1,0) [0|3] "" XXX
+ SG_ Counter : 56|4@1+ (1,0) [0|3] "" XXX
+
+BO_ 1559 R_OptData_PT_617_C1: 8 XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [0|3] "" XXX
+ SG_ Radar_Obj : 10|10@1- (0.5,0) [0|3] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [0|3] "" XXX
+ SG_ Checksum : 60|4@1+ (1,0) [0|3] "" XXX
+ SG_ Counter : 56|4@1+ (1,0) [0|3] "" XXX
+
+BO_ 1561 R_OptData_PT_619_D1: 8 XXX
+ SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [0|3] "" XXX
+ SG_ Radar_Obj : 10|10@1- (0.5,0) [0|3] "" XXX
+ SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [0|3] "" XXX
+ SG_ Checksum : 60|4@1+ (1,0) [0|3] "" XXX
+ SG_ Counter : 56|4@1+ (1,0) [0|3] "" XXX
+
+BO_ 1558 R_OptData_PTS_616_B2: 8 XXX
+
+BO_ 1560 R_OptData_PTS_618_C2: 8 XXX
+
+BO_ 1562 R_OptData_PTS_61a_D2: 8 XXX
+
+BO_ 1905 771LCAN: 8 XXX
+
+BO_ 1906 772LCAN: 8 XXX
+
+BO_ 602 25aLCAN_R: 8 XXX
+
+BO_ 603 25bLCAN_R: 8 XXX
+
+BO_ 604 25cLCAN_R: 8 XXX
+
+BO_ 605 25dLCAN_R: 8 XXX
+
+BO_ 606 25eLCAN_R: 8 XXX
