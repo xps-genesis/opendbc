@@ -1602,7 +1602,7 @@ BO_ 576 240LCAN_V: 8 XXX
  SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
  SG_ NEW_SIGNAL_2 : 16|3@1- (1,0) [0|3] "" XXX
- SG_ Distance : 20|12@1+ (1,-1024.00) [0|3] "" XXX
+ SG_ Distance : 20|12@1+ (1,-1024) [0|3] "" XXX
 
 BO_ 577 241LCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
@@ -2137,10 +2137,8 @@ BO_ 1537 R_OptData_601: 8 XXX
  SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
 
 BO_ 1904 V_Stat: 8 XXX
- SG_ Counter : 55|4@0+ (1,0) [0|15] "" XXX
- SG_ Master_Checksum : 7|8@0+ (1,0) [0|127] "" XXX
- SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
- SG_ Master_Counter : 16|24@1+ (1,0) [0|127] "" XXX
+ SG_ Byte 0 : 7|8@0+ (1,0) [0|127] "" XXX
+ SG_ Byte 1 : 15|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1903 76fLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
