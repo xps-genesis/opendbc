@@ -1442,6 +1442,7 @@ BO_ 1156 HDA11_MFC: 8 XXX
  SG_ NEW_SIGNAL_9 : 7|2@0+ (1,0) [0|3] "" XXX
 
 BO_ 1384 568: 8 XXX
+ SG_ NEW_SIGNAL_1 : 39|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1191 4a7MFC: 8 XXX
  SG_ PAINT1 : 0|1@0+ (1,0) [0|1] "" XXX
@@ -1489,10 +1490,8 @@ BO_ 870 366_EMS: 8 EMS
  SG_ VS : 40|8@1+ (1,0) [0|255] "km/h" MDPS
 
 BO_ 854 356: 8 XXX
- SG_ PAINT1 : 32|1@0+ (1,0) [0|1] "" XXX
- SG_ PAINT2 : 36|2@0+ (1,0) [0|3] "" XXX
+ SG_ PAINT2 : 36|5@0+ (1,0) [0|3] "" XXX
  SG_ PAINT3 : 38|1@0+ (1,0) [0|1] "" XXX
- SG_ PAINT4 : 34|2@0+ (1,0) [0|1] "" XXX
 
 BO_ 1107 453: 8 XXX
 
@@ -1598,7 +1597,7 @@ BO_ 574 23eLCAN_V: 8 XXX
 BO_ 575 23fLCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
 
-BO_ 576 240LCAN_V: 8 XXX
+BO_ 576 Unknown240: 8 XXX
  SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
  SG_ NEW_SIGNAL_2 : 16|3@1- (1,0) [0|3] "" XXX
@@ -2137,8 +2136,6 @@ BO_ 1537 R_OptData_601: 8 XXX
  SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
 
 BO_ 1904 V_Stat: 8 XXX
- SG_ Byte 0 : 7|8@0+ (1,0) [0|127] "" XXX
- SG_ Byte 1 : 15|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1903 76fLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -2228,6 +2225,7 @@ BO_ 909 FCA11: 8 FCA
  SG_ FCA_TimetoCollision : 48|8@1+ (10,0) [0|2540] "ms" iBAU
  SG_ CR_FCA_Alive : 56|4@1+ (1,0) [0|15] "" ESC
  SG_ CR_FCA_ChkSum : 60|4@1+ (1,0) [0|15] "" ESC
+ SG_ Supplemental_Counter : 38|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1157 LFAHDA_MFC: 8 XXX
  SG_ LFA_USM : 28|2@0+ (1,0) [0|3] "" XXX
@@ -2457,3 +2455,9 @@ BO_ 911 WHL_SPD13_FS: 5 iBAU
  SG_ WHL_SPD13_AliveCounter : 8|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ WHL_SPD_RL : 12|14@1+ (0.03125,0) [0|511.96875] "km/h" Vector__XXX
  SG_ WHL_SPD_RR : 26|14@1+ (0.03125,0) [0|511.96875] "km/h" Vector__XXX
+
+BO_ 1504 NEW_MSG_2: 8 XXX
+ SG_ NEW_SIGNAL_1 : 15|16@0+ (1,0) [0|3] "" XXX
+
+BO_ 1145 NEW_MSG_3: 8 XXX
+ SG_ NEW_SIGNAL_1 : 7|8@0+ (1,0) [0|255] "" XXX
