@@ -2231,6 +2231,8 @@ BO_ 909 FCA11: 8 FCA
  SG_ FCA_TimetoCollision : 48|8@1+ (10,0) [0|2540] "ms" iBAU
  SG_ CR_FCA_Alive : 56|4@1+ (1,0) [0|15] "" ESC
  SG_ CR_FCA_ChkSum : 60|4@1+ (1,0) [0|15] "" ESC
+ SG_ Supplemental_Counter : 35|4@1+ (1,0) [0|15] "" XXX
+ SG_ PAINT1_Status : 16|2@1+ (1,0) [0|1] "" XXX
 
 BO_ 1157 LFAHDA_MFC: 8 XXX
  SG_ LFA_USM : 28|2@0+ (1,0) [0|3] "" XXX
