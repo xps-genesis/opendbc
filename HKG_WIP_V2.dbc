@@ -2464,3 +2464,9 @@ BO_ 911 WHL_SPD13_FS: 5 iBAU
 
 BO_ 1912 NEW_MSG_2: 8 XXX
  SG_ NEW_SIGNAL_1 : 7|8@0+ (1,0) [0|255] "" XXX
+
+
+
+
+CM_ SG_ 1057 aReqRaw "MAX";
+CM_ SG_ 1057 aReqValue "MIN";
