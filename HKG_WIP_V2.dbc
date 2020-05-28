@@ -1183,8 +1183,8 @@ BO_ 1057 SCC12: 8 SCC
  SG_ AEB_StopReq : 55|1@1+ (1,0) [0|1] "" CLU,ESC
  SG_ CR_VSM_Alive : 56|4@1+ (1,0) [0|15] "" ESC,PSB
  SG_ CR_VSM_ChkSum : 60|4@1+ (1,0) [0|15] "" ESC,PSB
- SG_ aReqMax : 24|11@1+ (0.01,-10.23) [-10.23|10.24] "m/s^2" EMS,ESC,TCU
- SG_ aReqMin : 37|11@1+ (0.01,-10.23) [-10.23|10.24] "m/s^2" EMS,ESC,TCU
+ SG_ aReqRaw : 24|11@1+ (0.01,-10.23) [0|0] "m/s^2" Vector__XXX
+ SG_ aReqValue : 37|11@1+ (0.01,-10.23) [0|0] "m/s^2" Vector__XXX
 
 BO_ 1313 GW_DDM_PE: 8 BCM
  SG_ C_DRVDoorStatus : 0|2@1+ (1,0) [0|3] "" CLU
@@ -1442,7 +1442,6 @@ BO_ 1156 HDA11_MFC: 8 XXX
  SG_ NEW_SIGNAL_9 : 7|2@0+ (1,0) [0|3] "" XXX
 
 BO_ 1384 568: 8 XXX
- SG_ NEW_SIGNAL_1 : 39|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1191 4a7MFC: 8 XXX
  SG_ PAINT1 : 0|1@0+ (1,0) [0|1] "" XXX
@@ -1490,15 +1489,19 @@ BO_ 870 366_EMS: 8 EMS
  SG_ VS : 40|8@1+ (1,0) [0|255] "km/h" MDPS
 
 BO_ 854 356: 8 XXX
- SG_ PAINT2 : 36|5@0+ (1,0) [0|3] "" XXX
+ SG_ PAINT1 : 32|1@0+ (1,0) [0|1] "" XXX
+ SG_ PAINT2 : 36|2@0+ (1,0) [0|3] "" XXX
  SG_ PAINT3 : 38|1@0+ (1,0) [0|1] "" XXX
+ SG_ PAINT4 : 34|2@0+ (1,0) [0|1] "" XXX
 
 BO_ 1107 453: 8 XXX
 
 BO_ 1042 412LABEL6: 8 XXX
  SG_ Park_bttn_react_State : 44|1@0+ (1,0) [0|1] "" XXX
 
-BO_ 1155 483: 8 XXX
+BO_ 1155 FCA12: 8 FCA
+ SG_ FCA_USM : 0|3@1+ (1,0) [0|7] "" CGW,CLU,ESC
+ SG_ FCA_DrvSetState : 3|3@1+ (1,0) [0|7] "" CGW,CLU,ESC
 
 BO_ 1164 48c: 8 XXX
 
@@ -1512,8 +1515,8 @@ BO_ 1348 544LABEL2: 8 XXX
 
 BO_ 1180 49c: 8 XXX
 
-BO_ 1186 4a2SCC: 8 XXX
- SG_ Paint_1 : 0|1@0+ (1,0) [0|1] "" XXX
+BO_ 1186 FRT_RADAR11: 2 FCA
+ SG_ CF_FCA_Equip_Front_Radar : 0|3@1+ (1,0) [0|7] "" LDWS_LKAS,LDW_LKA,ESC
 
 BO_ 1470 5beLABEL1: 8 XXX
 
@@ -1597,7 +1600,7 @@ BO_ 574 23eLCAN_V: 8 XXX
 BO_ 575 23fLCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
 
-BO_ 576 Unknown240: 8 XXX
+BO_ 576 240LCAN_V: 8 XXX
  SG_ Counter : 48|8@1+ (1,0) [0|255] "" XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|7] "" XXX
  SG_ NEW_SIGNAL_2 : 16|3@1- (1,0) [0|3] "" XXX
@@ -2136,6 +2139,9 @@ BO_ 1537 R_OptData_601: 8 XXX
  SG_ Radar_ObjDist : 0|10@1+ (0.25,0) [-20|31.1] "m" MFC
 
 BO_ 1904 V_Stat: 8 XXX
+ SG_ NEW_SIGNAL_1 : 7|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_2 : 31|8@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_3 : 39|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1903 76fLCAN: 8 XXX
  SG_ Checksum : 63|8@0+ (1,0) [0|255] "" XXX
@@ -2202,12 +2208,12 @@ BO_ 1487 5cf: 8 XXX
  SG_ NEW_SIGNAL_1 : 7|16@0+ (1,0) [0|65535] "" XXX
 
 BO_ 905 SCC14: 8 SCC
- SG_ JerkUpperLimit : 12|7@1+ (0.1,0) [0|12.7] "m/s^3" ESC
- SG_ JerkLowerLimit : 19|7@1+ (0.1,0) [0|12.7] "m/s^3" ESC
- SG_ SCCMode2 : 32|3@1+ (1,0) [0|7] "" CLU,HUD,iBAU
- SG_ ColRiskF : 56|3@1+ (1,0) [0|3] "" XXX
- SG_ ComfortBandLower : 6|6@1+ (0.0986,-4.14) [0|1.26] "m/s^2" ESC
- SG_ ComfortBandUpper : 0|6@1+ (0.0986,-4.14) [0|1.26] "m/s^2" ESC
+ SG_ ComfortBandLower : 6|6@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ComfortBandUpper : 0|6@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ JerkLowerLimit : 19|7@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ JerkUpperLimit : 12|7@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ ACCMode : 32|3@1+ (1,0) [0|7] "" CLU,HUD,LDWS_LKAS,ESC
+ SG_ ObjGap : 56|8@1+ (1,0) [0|255] "" CLU,HUD,ESC
 
 BO_ 909 FCA11: 8 FCA
  SG_ CF_VSM_Prefill : 0|1@1+ (1,0) [0|1] "" ESC
@@ -2225,28 +2231,25 @@ BO_ 909 FCA11: 8 FCA
  SG_ FCA_TimetoCollision : 48|8@1+ (10,0) [0|2540] "ms" iBAU
  SG_ CR_FCA_Alive : 56|4@1+ (1,0) [0|15] "" ESC
  SG_ CR_FCA_ChkSum : 60|4@1+ (1,0) [0|15] "" ESC
- SG_ Supplemental_Counter : 38|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 1157 LFAHDA_MFC: 8 XXX
  SG_ LFA_USM : 28|2@0+ (1,0) [0|3] "" XXX
  SG_ HDA_USM : 0|2@1+ (1,0) [0|3] "" XXX
 
-BO_ 882 E_EMS12: 8 XXX
- SG_ NEW_SIGNAL_2 : 33|12@1- (1,0) [0|31] "" XXX
- SG_ NEW_SIGNAL_1 : 56|8@1+ (1,0) [0|255] "" XXX
- SG_ Gear_Stat : 16|3@1+ (1,0) [0|255] "" XXX
+BO_ 882 EV_PC5: 8 CGW
+ SG_ CR_Mcu_MotEstTq_Pc : 33|12@1- (0.048828125,0) [-100|99.951171875] "%" Vector__XXX
+ SG_ CF_Vcu_GarSelDisp : 16|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Regen_Lvl : 21|2@0+ (1,0) [0|15] "" XXX
  SG_ VS : 0|8@1+ (1,0) [0|255] "" XXX
 
-BO_ 881 E_EMS11: 8 XXX
- SG_ Cruise_Limit_Status : 13|1@1+ (1,0) [0|1] "" XXX
- SG_ Cruise_Limit_Target : 23|8@1+ (1,0) [0|15] "" XXX
- SG_ Gear_Change : 12|1@0+ (1,0) [0|31] "" XXX
- SG_ IG_Reactive_Stat : 8|3@1+ (1,0) [0|3] "" XXX
- SG_ Unknown_Stat : 11|1@0+ (1,0) [0|1] "" XXX
- SG_ Brake_Pedal_Pos : 7|8@0+ (1,0) [0|127] "" XXX
- SG_ Accel_Pedal_Pos : 31|8@1+ (1,0) [0|7] "" XXX
- SG_ NEW_SIGNAL_1 : 40|8@1+ (1,0) [0|15] "" XXX
+BO_ 881 EV_PC4: 8 CGW
+ SG_ CR_Vcu_MotTqCmd_Pc : 39|12@1- (0.048828125,0) [-100|99.951171875] "%" Vector__XXX
+ SG_ CR_Vcu_AccPedDep_Pc : 31|8@1+ (0.3921568627,0) [0|100] "%" Vector__XXX
+ SG_ CF_Vcu_EcoMdOff : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CF_Vcu_EvRdy : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CF_Vcu_EvRdyClu : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CF_Vcu_Rdy : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CR_Brk_StkDep_Pc : 0|8@1+ (1,0) [0|0] "%" Vector__XXX
 
 BO_ 1448 5a8: 8 XXX
 
@@ -2260,13 +2263,16 @@ BO_ 1332 534: 8 XXX
 
 BO_ 1333 535: 8 XXX
 
-BO_ 1355 54bLABEL12: 8 XXX
+BO_ 1355 EV_PC6: 8 CGW
+ SG_ CF_Vcu_SbwWarnMsg : 16|3@1+ (1,0) [0|7] "" Vector__XXX
 
 BO_ 1429 595LABEL10: 8 XXX
 
-BO_ 1430 596LABEL9: 8 XXX
+BO_ 1430 EV_PC2: 8 CGW
+ SG_ CR_Ldc_ActVol_LS_V : 32|8@1+ (0.1,0) [0|0] "V" Vector__XXX
 
-BO_ 1535 5ffLABEL7: 8 XXX
+BO_ 1535 EV_PC10: 8 CGW
+ SG_ CF_Vcu_EpbRequest : 37|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1476 5c4: 8 XXX
 
@@ -2456,8 +2462,5 @@ BO_ 911 WHL_SPD13_FS: 5 iBAU
  SG_ WHL_SPD_RL : 12|14@1+ (0.03125,0) [0|511.96875] "km/h" Vector__XXX
  SG_ WHL_SPD_RR : 26|14@1+ (0.03125,0) [0|511.96875] "km/h" Vector__XXX
 
-BO_ 1504 NEW_MSG_2: 8 XXX
- SG_ NEW_SIGNAL_1 : 15|16@0+ (1,0) [0|3] "" XXX
-
-BO_ 1145 NEW_MSG_3: 8 XXX
+BO_ 1912 NEW_MSG_2: 8 XXX
  SG_ NEW_SIGNAL_1 : 7|8@0+ (1,0) [0|255] "" XXX
