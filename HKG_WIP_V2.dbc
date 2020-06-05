@@ -1633,10 +1633,10 @@ BO_ 911 WHL_SPD13_FS: 5 iBAU
  SG_ WHL_SPD_RR : 26|14@1+ (0.03125,0) [0|511.96875] "km/h" Vector__XXX
 
 BO_ 865 ADAS_PRK_11: 8 ADAS_PRK
- SG_ PCA_CHECK_SUM : 48|8@1+ (1,0) [0|0] ""
- SG_ PCA_ALIVE_CNT : 40|4@1+ (1,0) [0|0] ""
- SG_ CF_PCA_DclTrgtVal : 28|4@1+ (0.04,0) [0|0] "g"
- SG_ CF_PCA_BrkReq : 24|1@1+ (1,0) [0|0] ""
+ SG_ PCA_CHECK_SUM : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PCA_ALIVE_CNT : 40|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CF_PCA_DclTrgtVal : 28|4@1+ (0.04,0) [0|0] "g" Vector__XXX
+ SG_ CF_PCA_BrkReq : 24|1@1+ (1,0) [0|0] "" Vector__XXX
 
 
 
