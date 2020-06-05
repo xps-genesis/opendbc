@@ -2467,6 +2467,12 @@ BO_ 911 WHL_SPD13_FS: 5 iBAU
 BO_ 1912 NEW_MSG_2: 8 XXX
  SG_ NEW_SIGNAL_1 : 7|8@0+ (1,0) [0|255] "" XXX
 
+BO_ 865 ADAS_PRK_11: 8 ADAS_PRK
+ SG_ PCA_CHECK_SUM : 48|8@1+ (1,0) [0|0] ""
+ SG_ PCA_ALIVE_CNT : 40|4@1+ (1,0) [0|0] ""
+ SG_ CF_PCA_DclTrgtVal : 28|4@1+ (0.04,0) [0|0] "g"
+ SG_ CF_PCA_BrkReq : 24|1@1+ (1,0) [0|0] ""
+
 
 
 
