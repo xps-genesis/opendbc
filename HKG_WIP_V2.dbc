@@ -1638,6 +1638,10 @@ BO_ 865 ADAS_PRK_11: 8 ADAS_PRK
  SG_ CF_PCA_DclTrgtVal : 28|4@1+ (0.04,0) [0|0] "g" Vector__XXX
  SG_ CF_PCA_BrkReq : 24|1@1+ (1,0) [0|0] "" Vector__XXX
 
+BO_ 913 BCM_PO_1: 8 Vector__XXX
+ SG_ BCM_Door_Dri_Status : 5|1@0+ (1,0) [0|1] ""  PT_ESC_ABS
+ SG_ BCM_Shift_R_MT_SW_Status : 39|2@0+ (1,0) [0|3] ""  PT_ESC_ABS
+
 
 
 
