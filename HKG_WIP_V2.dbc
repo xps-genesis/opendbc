@@ -1492,8 +1492,23 @@ BO_ 854 356: 8 XXX
  SG_ PAINT3 : 38|1@0+ (1,0) [0|1] "" XXX
  SG_ PAINT4 : 34|2@0+ (1,0) [0|1] "" XXX
 
-BO_ 1042 412LABEL6: 8 XXX
- SG_ Park_bttn_react_State : 44|1@0+ (1,0) [0|1] "" XXX
+BO_ 1042 ICM_412h: 8 ICM
+ SG_ WarningSoundOutput_3Group : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WarningSoundOutput_2Group : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WarningSoundOutput_1Group : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PopupMessageOutput_8Level : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PopupMessageOutput_7Level : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PopupMessageOutput_6Level : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PopupMessageOutput_5Level : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PopupMessageOutput_4Level : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PopupMessageOutput_3Level : 50|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PopupMessageOutput_2Level : 49|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PopupMessageOutput_1Level : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TRIP_B_DT_Display_minute : 45|6@0+ (1,0) [0|59] "minute" Vector__XXX
+ SG_ TRIP_B_DT_Display_clock : 38|7@0+ (1,0) [0|99] "clock" Vector__XXX
+ SG_ TRIP_A_DT_Display_minute : 29|6@0+ (1,0) [0|59] "minute" Vector__XXX
+ SG_ TRIP_A_DT_Display_clock : 22|7@0+ (1,0) [0|99] "clock" Vector__XXX
+ SG_ T_Outside_input : 0|9@0+ (0.01,0) [0|5] "V" Vector__XXX
 
 BO_ 1155 FCA12: 8 FCA
  SG_ FCA_USM : 0|3@1+ (1,0) [0|7] "" CGW,CLU,ESC
