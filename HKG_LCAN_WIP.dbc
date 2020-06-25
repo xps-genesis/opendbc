@@ -59,7 +59,6 @@ BO_ 513 201LCAN_StatInfo: 8 XXX
 BO_ 514 202LCAN_StatInfo: 8 XXX
  SG_ Counter : 39|8@0+ (1,0) [0|65535] "" XXX
  SG_ Checksum : 47|8@0+ (1,0) [0|255] "" XXX
- SG_ Version or Something : 63|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 515 203LCAN_StatCounter: 8 XXX
  SG_ Checksum_2 : 63|8@0+ (1,0) [0|255] "" XXX
@@ -97,8 +96,10 @@ BO_ 621 26dLCAN_R: 8 XXX
 BO_ 618 26aLCAN_R: 8 XXX
 
 BO_ 568 238LCAN_V: 8 XXX
- SG_ NEW_SIGNAL_1 : 36|11@0- (1,0) [0|16383] "" XXX
+ SG_ NEW_SIGNAL_1 : 37|12@0+ (1,0) [0|16383] "" XXX
  SG_ NEW_SIGNAL_2 : 41|10@0+ (1,0) [0|255] "" XXX
+ SG_ NEW_SIGNAL_3 : 7|13@0+ (1,0) [0|16383] "" XXX
+ SG_ NEW_SIGNAL_4 : 23|12@0+ (1,0) [0|1] "" XXX
 
 BO_ 569 239LCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
