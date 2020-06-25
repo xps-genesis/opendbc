@@ -81,7 +81,11 @@ BO_ 523 20bLCAN_StatInfo: 8 XXX
 BO_ 524 20cLCAN_StatInfo: 8 XXX
 
 BO_ 623 26fLCAN_R: 8 XXX
- SG_ NEW_SIGNAL_1 : 39|8@0+ (1,0) [0|255] "" XXX
+ SG_ Counter : 1|2@0+ (1,0) [0|255] "" XXX
+ SG_ DIST_3 : 39|16@0+ (1,0) [0|7] "" XXX
+ SG_ DIST_4 : 55|16@0+ (1,0) [0|65535] "" XXX
+ SG_ LAT_1 : 15|11@0- (1,0) [0|255] "" XXX
+ SG_ LAT_2 : 18|11@0- (1,0) [0|3] "" XXX
 
 BO_ 622 26eLCAN_R: 8 XXX
 
