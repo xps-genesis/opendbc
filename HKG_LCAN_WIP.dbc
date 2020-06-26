@@ -83,10 +83,10 @@ BO_ 524 20cLCAN_StatInfo: 8 XXX
 
 BO_ 623 26fLCAN_R: 8 XXX
  SG_ DIST_3 : 39|16@0+ (1,0) [0|7] "" XXX
- SG_ LAT_1 : 15|11@0- (1,0) [0|255] "" XXX
  SG_ LAT_2 : 18|11@0- (1,0) [0|3] "" XXX
  SG_ DIST_4 : 55|16@0+ (1,0) [0|65535] "" XXX
  SG_ Counter : 1|2@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_1 : 15|11@0+ (1,0) [0|255] "" XXX
 
 BO_ 622 26eLCAN_R: 8 XXX
 
@@ -100,7 +100,7 @@ BO_ 568 238LCAN_V: 8 XXX
  SG_ NEW_SIGNAL_5 : 63|8@0+ (1,0) [0|1] "" XXX
  SG_ NEW_SIGNAL_1 : 35|10@0+ (1,0) [0|16383] "" XXX
  SG_ NEW_SIGNAL_2 : 41|10@0+ (1,0) [0|255] "" XXX
- SG_ NEW_SIGNAL_3 : 7|13@0+ (0.1,0) [0|16383] "" XXX
+ SG_ NEW_SIGNAL_3 : 7|13@0+ (0.01,0) [0|16383] "" XXX
 
 BO_ 569 239LCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
@@ -189,13 +189,11 @@ BO_ 591 24fLCAN_V: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
  SG_ Counter : 55|8@0+ (1,0) [0|255] "" XXX
 
-BO_ 614 266LCAN_R: 8 XXX
- SG_ Radar_ObjRelSpd_2 : 52|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
- SG_ Radar_ObjDist_2 : 32|10@1+ (0.25,0) [0|31.1] "m" MFC
- SG_ Radar_ObjDist : 0|8@1+ (0.25,0) [-20|31.1] "m" MFC
- SG_ Radar_ObjLat : 8|12@1- (0.5,0) [0|7] "" XXX
- SG_ Radar_ObjRelSpd : 20|12@1+ (0.1,-102.5) [-170|239.5] "m/s" MFC
- SG_ Radar_ObjLat2 : 42|10@1- (1,0.5) [0|7] "" XXX
+BO_ 614 266LCAN_L: 8 XXX
+ SG_ NEW_SIGNAL_2 : 20|11@0+ (1,0) [0|15] "" XXX
+ SG_ Counter : 0|2@1+ (1,0) [0|3] "" XXX
+ SG_ NEW_SIGNAL_1 : 39|16@0+ (1,0) [0|255] "" XXX
+ SG_ Center_Relative_Lane : 15|11@0+ (1,-849) [0|3] "" XXX
 
 BO_ 615 267LCAN_R: 8 XXX
  SG_ NEW_SIGNAL_1 : 42|10@1+ (1,0) [0|7] "" XXX
@@ -774,10 +772,10 @@ BO_ 602 NEW_MSG_1: 8 XXX
  SG_ NEW_SIGNAL_4 : 14|13@0- (1,0) [0|31] "" XXX
 
 BO_ 603 NEW_MSG_2: 8 XXX
- SG_ NEW_SIGNAL_1 : 7|9@0+ (1,0) [0|127] "" XXX
  SG_ NEW_SIGNAL_2 : 46|13@0+ (1,0) [0|8191] "" XXX
- SG_ NEW_SIGNAL_3 : 14|13@0+ (1,0) [0|3] "" XXX
  SG_ NEW_SIGNAL_4 : 39|9@0+ (1,0) [0|3] "" XXX
+ SG_ LAT_1 : 14|13@0+ (1,0) [0|3] "" XXX
+ SG_ Distance_1 : 7|9@0+ (1,0) [0|127] "" XXX
 
 BO_ 604 NEW_MSG_3: 8 XXX
  SG_ NEW_SIGNAL_1 : 7|9@0+ (1,0) [0|511] "" XXX
