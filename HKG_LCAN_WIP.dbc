@@ -191,11 +191,9 @@ BO_ 591 24fLCAN_V: 8 XXX
 
 BO_ 614 266LCAN_L: 8 XXX
  SG_ Counter : 0|2@1+ (1,0) [0|3] "" XXX
- SG_ Center_Relative_Lane : 13|9@0+ (1,-325) [0|3] "" XXX
  SG_ NEW_SIGNAL_1 : 39|16@0+ (1,0) [0|255] "" XXX
  SG_ NEW_SIGNAL_2 : 18|9@0+ (1,0) [0|3] "" XXX
- SG_ STAT_CRL : 15|2@0+ (1,0) [0|3] "" XXX
- SG_ STAT_PAINT2 : 20|2@0+ (1,0) [0|3] "" XXX
+ SG_ Center_Relative_Lane : 15|11@0+ (1,0) [0|3] "" XXX
 
 BO_ 615 267LCAN_R: 8 XXX
  SG_ NEW_SIGNAL_1 : 42|10@1+ (1,0) [0|7] "" XXX
