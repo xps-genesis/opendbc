@@ -53,42 +53,42 @@ BO_ 1056 SCC11: 8 SCC
  SG_ ACC_ObjRelSpd : 44|12@1+ (0.1,-170) [-170|239.5] "m/s" ABS,ESC
  SG_ ACC_ObjDist : 33|11@1+ (0.1,0) [0|204.7] "m" ABS,ESC
 
-BO_ 513 201LCAN_StatInfo.023: 8 XXX
+BO_ 513 201LCAN_StatInfo_023: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
 
-BO_ 514 202LCAN_StatInfo.023: 8 XXX
+BO_ 514 202LCAN_StatInfo_023: 8 XXX
  SG_ Counter : 39|8@0+ (1,0) [0|65535] "" XXX
  SG_ Checksum : 47|8@0+ (1,0) [0|255] "" XXX
 
-BO_ 515 203LCAN_StatCounter.023: 8 XXX
+BO_ 515 203LCAN_StatCounter_023: 8 XXX
  SG_ Checksum_2 : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter_2 : 47|16@0+ (1,0) [0|3] "" XXX
  SG_ Checksum : 31|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter : 15|16@0+ (1,0) [0|255] "" XXX
  SG_ Alive_Bit : 1|2@0+ (1,0) [0|3] "" XXX
 
-BO_ 516 204LCAN_StatInfo.023: 8 XXX
+BO_ 516 204LCAN_StatInfo_023: 8 XXX
  SG_ NEW_SIGNAL_1 : 32|8@1+ (1,0) [0|2047] "" XXX
 
-BO_ 517 205LCAN_StatInfo.023: 8 XXX
+BO_ 517 205LCAN_StatInfo_023: 8 XXX
 
-BO_ 522 20aLCAN_StatInfo.023: 8 XXX
+BO_ 522 20aLCAN_StatInfo_023: 8 XXX
  SG_ Alive_Counter : 0|2@1+ (1,0) [0|3] "" XXX
 
-BO_ 523 20bLCAN_StatInfo.023: 8 XXX
+BO_ 523 20bLCAN_StatInfo_023: 8 XXX
  SG_ Counter1 : 55|8@0+ (1,0) [0|255] "" XXX
  SG_ Counter2 : 63|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 524 20cLCAN_StatInfo: 8 XXX
 
-BO_ 623 26fLCAN_R.013: 8 XXX
+BO_ 623 26fLCAN_R_013: 8 XXX
  SG_ DIST_3 : 39|16@0+ (1,0) [0|7] "" XXX
  SG_ LAT_2 : 18|11@0- (1,0) [0|3] "" XXX
  SG_ DIST_4 : 55|16@0+ (1,0) [0|65535] "" XXX
  SG_ Counter : 1|2@0+ (1,0) [0|255] "" XXX
  SG_ LAT_1 : 15|11@0+ (1,0) [0|255] "" XXX
 
-BO_ 622 26eLCAN_R.013: 8 XXX
+BO_ 622 26eLCAN_R_013: 8 XXX
 
 BO_ 621 26dLCAN_R: 8 XXX
  SG_ Alive_Counter : 16|2@1+ (1,0) [0|3] "" XXX
